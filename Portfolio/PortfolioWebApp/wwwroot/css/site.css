@@ -36,15 +36,27 @@ body {
     background-color: #7E5439;
 }
 
-.black-frame {
-    border-block-color: black;
-}
-.blue-frame {
-    border-block-color: blue;
-}
-
 /* ---- Navbar ----*/
 #navbar {
     transition: ease-in-out 0.3s;
     background-color: #7E5439;
+}
+
+/* ---- Flexbox ----*/
+.flex-container {
+    display: flex;
+    background-color: #32a852;
+}
+
+.flex-container div {
+    background-color: #c9d1cb;
+    margin: 10px;
+    padding: 10px;
+}
+
+.center { /* vertical and horizontal centering */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
 }
