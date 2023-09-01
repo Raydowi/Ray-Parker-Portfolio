@@ -1,0 +1,50 @@
+/*
+    HEX CODES:
+    Cream: #FFF5EB
+    Soft brown:#DFBF9F
+    Medium brown: #7E5439
+    Hard Brown: #592B15
+*/
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/*Add header id; move buttons to righthand side; add navbar id*/
+
+/* ---- Text/BG color classes ----*/
+.cream-text {
+    color: #FFF5EB;
+}
+
+.med-brown-bg {
+    background-color: #7E5439;
+}
+
+.black-frame {
+    border-block-color: black;
+}
+.blue-frame {
+    border-block-color: blue;
+}
+
+/* ---- Navbar ----*/
+#navbar {
+    transition: ease-in-out 0.3s;
+    background-color: #7E5439;
+}
