@@ -424,13 +424,36 @@ section .container span {
   color: #9c664b;
 }
 
-#center-div{
+.center-div{
+  position: relative;
+  top: 0;
+  left: 0;
   height: 70vh;
   overflow: hidden;
 }
 
-#center-img {
+.center-img-1 {
+  position: relative;
+  top: 0;
+  left: 0;
+  border: 1px solid #000000;
   width: 110vh;
+}
+
+.center-img-2 {
+  position: absolute;
+  top: 30%;
+  left: 30%;
+  border: 1px solid #000000;
+  width:60%;
+}
+
+.center-buttons {
+  position: absolute;
+  top: 50vh;
+  left: 4.5vh;
+  border: 1px solid #000000;
+  width:50%;
 }
 
 .about-me .content ul {
@@ -564,6 +587,7 @@ section .container span {
 
 .services .icon-box h4 {
   font-weight: 700;
+  text-align: center;
   margin-bottom: 15px;
   font-size: 24px;
 }
@@ -851,14 +875,14 @@ section .container span {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: rgba(255, 255, 255, 0.5);
+  color: #000000;
   font-weight: 700;
   margin: 10px 0 8px 68px;
 }
 
 .contact .info-box p {
   padding: 0;
-  color: #fff;
+  color: #000000;
   line-height: 24px;
   font-size: 14px;
   margin: 0 0 0 68px;
@@ -872,7 +896,7 @@ section .container span {
 .contact .info-box .social-links a {
   font-size: 18px;
   display: inline-block;
-  color: #fff;
+  color: #000000;
   line-height: 1;
   margin-right: 12px;
   transition: 0.3s;
@@ -936,7 +960,7 @@ section .container span {
   background: rgba(255, 255, 255, 0.08);
   border: 0;
   transition: 0.3s;
-  color: #fff;
+  color: #000000;
 }
 
 .contact .php-email-form input:focus,
@@ -968,7 +992,7 @@ section .container span {
   background: #9c664b;
   border: 0;
   padding: 10px 30px;
-  color: #fff;
+  color: #000000;
   transition: 0.4s;
   border-radius: 4px;
 }
