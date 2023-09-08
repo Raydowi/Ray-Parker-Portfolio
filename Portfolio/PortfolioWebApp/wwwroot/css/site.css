@@ -119,3 +119,12 @@ section .regular h1, h2, h3, h4, h5, h6 {
     text-align: justify;
     color: #9c664b;
 }
+
+.autumn-bg {
+    background-image: url("../About/AutumnBG_AdobeStock.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+}
