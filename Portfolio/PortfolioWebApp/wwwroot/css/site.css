@@ -64,19 +64,17 @@ body {
     padding: 10px;
 }
 
-.center-text { /* vertical and horizontal centering */
+.flex-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    /*height: 500px;*/
+    flex-direction: row;
 }
 
 .center {
-    margin: auto;
-    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
     border: 3px solid green;
-    padding: 10px;
-    height: 500px;
 }
 
 .center-div {
