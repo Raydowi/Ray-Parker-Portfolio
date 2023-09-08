@@ -83,7 +83,7 @@ body {
     position: relative;
     top: 0;
     left: 0;
-    height: 70vh;
+    height: auto;
     overflow: hidden;
 }
 
