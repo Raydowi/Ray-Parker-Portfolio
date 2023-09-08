@@ -32,6 +32,16 @@ body {
     color: #FFF5EB;
 }
 
+.cream-bg {
+    background-color: #FFF5EB;
+}
+
+.med-brown-text {
+    font-weight: 600;
+    text-align: justify;
+    color: #9c664b;
+}
+
 .med-brown-bg {
     background-color: #7E5439;
 }
@@ -54,9 +64,60 @@ body {
     padding: 10px;
 }
 
-.center { /* vertical and horizontal centering */
+.center-text { /* vertical and horizontal centering */
     display: flex;
     justify-content: center;
     align-items: center;
+    /*height: 500px;*/
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
     height: 500px;
+}
+
+.center-div {
+    position: relative;
+    top: 0;
+    left: 0;
+    height: 70vh;
+    overflow: hidden;
+}
+
+.center-parent-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    border: 1px solid #000000;
+    width: 110vh;
+}
+
+.center-child-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border: 1px solid #000000;
+    width: 60%;
+    transform: translate(-50%,-50%);
+}
+
+section span {
+    color: #000000;
+    border-bottom: 2px solid #9c664b;
+    font-weight: bold;
+}
+
+/* This class ensures that specific font colors/weights are used for the page*/
+section .regular span {
+    color: #000000;
+    border-bottom: 2px solid #9c664b;
+    font-weight: bold;
+}
+section .regular h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    text-align: justify;
+    color: #9c664b;
 }
