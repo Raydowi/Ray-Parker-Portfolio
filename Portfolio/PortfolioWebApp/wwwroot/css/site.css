@@ -224,6 +224,7 @@ body {
     background-color: #DFBF9F;
     border-radius: 30px;
     box-shadow: 0 4px 8px 0 rgba(223, 191, 159, 0.5);
+    transition: 0.4s;
 }
 
 .card-text {
@@ -238,6 +239,20 @@ body {
     background-image: url("../Portfolio/WhiskerWitcheryThumbnail.png");
     background-size: cover;
     background-position: left;
+}
+
+    /* ---- TODO WHEN BACK
+        Create an element that is HIDDEN on top of the whisker witchery card. This will be what shows
+        when it's hovered
+        Then, when mouse hovers above it, SHOW this element (and HIDE the background's card title element!)
+        
+        ----*/
+
+#Whisker-Witchery.card:hover {
+    transform: scale(1.03, 1.03);
+    background-blend-mode: multiply;
+    -webkit-filter: blur(4px);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), -5px -5px 30px 15px rgba(0,0,0,0.22);
 }
 
 .title-white {
