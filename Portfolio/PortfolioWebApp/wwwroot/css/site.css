@@ -83,6 +83,13 @@ body {
     flex: 1;
 }
 
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
 }
 
 /* ---- Index Page ----*/
@@ -169,7 +176,6 @@ body {
     padding: 35px 35px;
 }
 
-
 #Quick-Links input {
     background-color: #000000;
     border: none;
@@ -194,8 +200,8 @@ body {
     height: 100px;
 }
 
-#Gave-Dev {
-
+#Gave-Dev.div {
+    margin:5px;
 }
 
 #Software-Dev {
@@ -204,4 +210,19 @@ body {
 
 #2D-Art {
 
+}
+
+.card {
+    height: 400px;
+    margin: 20px;
+    padding: 16px;
+    text-align: center;
+    background-color: #DFBF9F;
+    box-shadow: 0 4px 8px 0 rgba(223, 191, 159, 0.5);
+}
+
+.hr {
+    margin: 20px;
+    padding: 20px;
+    color: #592B15;
 }
