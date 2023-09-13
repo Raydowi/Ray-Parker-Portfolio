@@ -48,11 +48,14 @@
             </div>
             <div style="position: relative; display: flex; overflow: hidden; padding: 25px 30px;" class="autumn-bg col-lg-6" data-aos="fade-right">
                 <img class="center-child-img" src="~/About/Icon Test.png" alt="">
-                <div style="justify-content: center;position: absolute;top: 85%;left: 50%;border: 1px solid #000000;width: 60%;transform: translate(-50%,-50%);padding: 10px;" class="flex-container center-child-img">
-                    <button class="column" style="margin:10px">
-                        Portfolio
+                <div id="index-button-row" class="flex-container center-child-img">
+                    <button class="column button" style="margin:10px">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Portfolio">Portfolio</a>
                     </button>
-                    <button class="column" style="margin:10px">
+                    <button class="column button" style="margin:10px">
+                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Contact">Contact</a>
+                    </button>
+                    <button class="column button" style="margin:10px" href="~/About/Ray_Parker_CV.pdf" download>
                         Download CV
                     </button>
                 </div>
