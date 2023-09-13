@@ -5,45 +5,45 @@
     ViewData["Title"] = "Portfolio Page";
 }
 
-
-<div class="regular">
-
-    <!-- Introductory portfolio section - header + (optional) description -->
-    <section>
-        <div class="text-center">
-            <h1 class="display-4"> <b>Portfolio</b></h1>
-        </div>
-    </section>
-
-
-    <!-- Quick links to three different portfolio sections: Game Dev, Software Dev, and 2D Illustrations -->
-    <section id="Quick-Links">
-        <div class="row">
-            <div class="column">
-                <input type="button" onClick="document.getElementById('Game-Dev').scrollIntoView();" value="Game Dev" />
+<body class="cream-bg">
+    <div class="regular">
+        <!-- Introductory portfolio section - header + (optional) description -->
+        <section>
+            <div class="text-center">
+                <h1 class="display-4"> <b>Portfolio</b></h1>
             </div>
-            <div class="column">
-                <input type="button" onClick="document.getElementById('Software-Dev').scrollIntoView();" value="Software Dev" />
+        </section>
+
+        <!-- Quick links to three different portfolio sections: Game Dev, Software Dev, and 2D Illustrations -->
+        <section id="Quick-Links" class="autumn-bg">
+            <div class="row">
+                <div class="column">
+                    <input type="button" onClick="document.getElementById('Game-Dev').scrollIntoView();" value="Game Dev" />
+                </div>
+                <div class="column">
+                    <input type="button" onClick="document.getElementById('Software-Dev').scrollIntoView();" value="Software Dev" />
+                </div>
+                <div class="column">
+                    <input type="button" onClick="document.getElementById('2D-Art').scrollIntoView();" value="2D Illustrations" />
+                </div>
             </div>
-            <div class="column">
-                <input type="button" onClick="document.getElementById('2D-Art').scrollIntoView();" value="2D Illustrations" />
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- GAME DEVELOPMENT SECTION -->
-    <section id ="Game-Dev">
-        <p>TODO: game dev card sections</p>
-    </section>
+        <!-- GAME DEVELOPMENT SECTION -->
+        <section id="Game-Dev">
+            <p>TODO: game dev card sections</p>
+        </section>
 
-    <!-- SOFTWARE DEVELOPMENT SECTION -->
-    <section id="Software-Dev">
-        <p>TODO: software dev sections</p>
-    </section>
+        <!-- SOFTWARE DEVELOPMENT SECTION -->
+        <section id="Software-Dev">
+            <p>TODO: software dev sections</p>
+        </section>
 
-    <!-- 2D ILLUSTRATION SECTION -->
-    <section id="2D-Art">
-        <p>TODO: 2d illustration section</p>
-    </section>
+        <!-- 2D ILLUSTRATION SECTION -->
+        <section id="2D-Art">
+            <p>TODO: 2d illustration section</p>
+        </section>
 
-</div>
+    </div>
+
+</body>

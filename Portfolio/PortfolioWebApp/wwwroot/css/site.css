@@ -144,7 +144,7 @@ body {
 .button {
     background-color: #000000;
     border: none;
-    color: white;
+    color: #FFF5EB;
     padding: 5px 20px;
     text-align: center;
     display: inline-block;
@@ -163,3 +163,45 @@ body {
 }
 
 /* ---- Portfolio Page ----*/
+
+#Quick-Links {
+    margin: 10px;
+    padding: 35px 35px;
+}
+
+
+#Quick-Links input {
+    background-color: #000000;
+    border: none;
+    color: #FFF5EB;
+    padding: 5px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+}
+
+#Quick-Links input:hover {
+    color: #FFF5EB;
+    opacity: 75%;
+}
+
+#Quick-Links.autumn-bg {
+    background-image: url("../About/AutumnBG_AdobeStock.jpg");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    height: 100px;
+}
+
+#Gave-Dev {
+
+}
+
+#Software-Dev {
+
+}
+
+#2D-Art {
+
+}
