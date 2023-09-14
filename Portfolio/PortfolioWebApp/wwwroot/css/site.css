@@ -212,10 +212,14 @@ body {
 
 }
 
+.hide {
+    position:absolute;
+    display: none;
+}
+
 .card {
     height: 400px;
     margin: 20px;
-    padding: 16px;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 30px;
@@ -224,10 +228,10 @@ body {
     background-color: #DFBF9F;
     border-radius: 30px;
     box-shadow: 0 4px 8px 0 rgba(223, 191, 159, 0.5);
-    transition: 0.4s;
+    overflow: hidden;
 }
 
-.card-text {
+.card-text-old {
     display: flex;
     justify-content: center;
     margin-top: auto;
@@ -235,24 +239,41 @@ body {
     width:100%;
 }
 
-#Whisker-Witchery.card {
+
+.card-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center !important;
+}
+
+#Whisker-Witchery .card-bg {
     background-image: url("../Portfolio/WhiskerWitcheryThumbnail.png");
     background-size: cover;
     background-position: left;
+    overflow: hidden;
 }
 
-    /* ---- TODO WHEN BACK
-        Create an element that is HIDDEN on top of the whisker witchery card. This will be what shows
-        when it's hovered
-        Then, when mouse hovers above it, SHOW this element (and HIDE the background's card title element!)
-        
-        ----*/
+.card-bg {
+    height:100%;
+}
 
-#Whisker-Witchery.card:hover {
-    transform: scale(1.03, 1.03);
+.card-bg:hover {
+    transition: 0.5s;
+    transform: scale(1.1, 1.1);
     background-blend-mode: multiply;
-    -webkit-filter: blur(4px);
-    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), -5px -5px 30px 15px rgba(0,0,0,0.22);
+    -webkit-filter: blur(2px);
+    box-shadow: 3px 3px 15px 7px rgba(0,0,0,0.25), -3px -3px 15px 7px rgba(0,0,0,0.22);
+}
+
+.card-bg:hover h1 {
+    transform: translateY(130%);
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover .hide {
+    display: flex;
 }
 
 .title-white {
