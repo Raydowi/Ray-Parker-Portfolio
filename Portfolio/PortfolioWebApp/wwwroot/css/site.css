@@ -22,7 +22,9 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    text-align: left;
+    text-indent: 25px;
+    margin-bottom: 60px;
 }
 
 /* ---- Text/BG color classes ----*/
@@ -94,27 +96,10 @@ body {
 
 /* ---- Index Page ----*/
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 200px;
-    border: 3px solid green;
-}
-
-.center-div {
-    position: relative;
-    top: 0;
-    left: 0;
-    height: auto;
-    overflow: hidden;
-}
-
 .center-parent-img {
     position: relative;
     top: 0;
     left: 0;
-    border: 1px solid #000000;
     width: 110vh;
 }
 
@@ -122,7 +107,6 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    border: 1px solid #000000;
     width: 60%;
     transform: translate(-50%,-50%);
 }
@@ -135,7 +119,8 @@ body {
 
 .regular h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
-    text-align: justify;
+    text-indent: 25px;
+    text-align: left;
     color: #9c664b;
 }
 
@@ -158,12 +143,16 @@ body {
     font-size: 15px;
 }
 
+.button:hover {
+    transition: 0.5s;
+    transform: scale(1.05, 1.05);
+}
+
 #index-button-row {
     justify-content: center;
     position: absolute;
     top: 85%;
     left: 50%;
-    border: 1px solid #000000;
     width: 80%;
     transform: translate(-50%,-50%);
     padding: 10px;
