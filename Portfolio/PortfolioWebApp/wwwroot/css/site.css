@@ -290,3 +290,26 @@ body {
     padding: 20px;
     color: #592B15;
 }
+
+/* ---- whisker Witchery ----*/
+
+.h1-f474de {
+    text-align: center;
+}
+
+.p-33b2d2 {
+    font-size: 19px;
+    text-indent: 25px;
+}
+
+@media screen and (min-width: 576px) {
+
+    .h1-f474de {
+        text-align: center;
+    }
+
+    .p-33b2d2 {
+        font-size: 12px;
+    }
+}
+

@@ -8,5 +8,11 @@ namespace PortfolioWebApp.Controllers
         {
             return View();
         }
+
+        public IActionResult WhiskerWitchery()
+        {
+            return View();
+        }
+
     }
 }
