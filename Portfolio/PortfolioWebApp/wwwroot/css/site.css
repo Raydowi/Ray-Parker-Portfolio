@@ -22,6 +22,7 @@ html {
 }
 
 body {
+    background-color: #FFF5EB;
     text-align: left;
     text-indent: 25px;
     margin-bottom: 60px;
@@ -32,10 +33,6 @@ body {
     color: #FFF5EB;
 }
 
-.cream-bg {
-    background-color: #FFF5EB;
-}
-
 .med-brown-text {
     font-weight: 600;
     text-align: justify;
@@ -44,6 +41,10 @@ body {
 
 .med-brown-bg {
     background-color: #7E5439;
+}
+
+.dark-brown-text {
+    color: #592B15;
 }
 
 /* ---- Navbar ----*/
@@ -83,6 +84,11 @@ body {
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
+}
+
+.p {
+    font-size: 20px;
+    text-indent: 25px;
 }
 
 /* Responsive columns - one column layout (vertical) on small screens */
@@ -289,27 +295,21 @@ body {
     margin: 20px;
     padding: 20px;
     color: #592B15;
+    width: 2px;
 }
 
-/* ---- whisker Witchery ----*/
+/* ---- Whisker Witchery ----*/
 
-.h1-f474de {
+.game-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     text-align: center;
+    font-weight: 600;
+    color: #9c664b;
 }
 
-.p-33b2d2 {
-    font-size: 19px;
-    text-indent: 25px;
+.videosize {
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
-
-@media screen and (min-width: 576px) {
-
-    .h1-f474de {
-        text-align: center;
-    }
-
-    .p-33b2d2 {
-        font-size: 12px;
-    }
-}
-
