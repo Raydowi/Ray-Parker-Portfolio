@@ -166,12 +166,12 @@ body {
 
 /* ---- Portfolio Page ----*/
 
-#Quick-Links {
+.quick-links {
     margin: 10px;
     padding: 35px 35px;
 }
 
-#Quick-Links input {
+.quick-links input {
     background-color: #000000;
     border: none;
     color: #FFF5EB;
@@ -181,18 +181,18 @@ body {
     font-size: 15px;
 }
 
-#Quick-Links input:hover {
+.quick-links input:hover {
     color: #FFF5EB;
     opacity: 75%;
 }
 
-#Quick-Links.autumn-bg {
+.quick-links.autumn-bg {
     background-image: url("../About/AutumnBG_AdobeStock.jpg");
     background-repeat: no-repeat;
     overflow: hidden;
     background-position: center;
     background-size: cover;
-    height: 100px;
+    height: auto;
 }
 
 #Gave-Dev.div {
@@ -209,7 +209,7 @@ body {
 
 .hide {
     position: absolute;
-    transform: translateY(-110%);
+    transform: translateY(-130%);
     pointer-events: none;
     margin: 10px;
     height: 90%;
@@ -302,13 +302,23 @@ body {
 
 .game-title {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    font-weight: 600;
-    color: #9c664b;
+    text-align: center !important;
 }
 
 .videosize {
     height: 500px;
+}
+
+
+.icons {
+    height: 250px;
+    width: 200px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+
+.center-section {
     display: flex;
     align-items: center;
     justify-content: center;
