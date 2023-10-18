@@ -72,6 +72,9 @@ body {
     flex-direction: row;
 }
 
+
+
+
 .row {
     display: flex;
     flex-direction: row;
@@ -184,6 +187,8 @@ body {
 .quick-links input:hover {
     color: #FFF5EB;
     opacity: 75%;
+    transition: 0.5s;
+    transform: scale(0.95, 0.95);
 }
 
 .quick-links.autumn-bg {
@@ -263,7 +268,7 @@ body {
 }
 
 .card-bg:hover, .hide:hover {
-    transition: 0.5s;
+    transition: ease-in-out 0.3s;
     transform: scale(1.1, 1.1);
     -webkit-filter: blur(2px);
     box-shadow: 3px 3px 15px 7px rgba(0,0,0,0.25), -3px -3px 15px 7px rgba(0,0,0,0.22);
@@ -279,7 +284,7 @@ body {
 }
 
 .card:hover .hide {
-    transition: ease-in-out 0.2s;
+    transition: ease-in-out 0.45s;
     transform: translateY(0%);
 }
 
