@@ -147,6 +147,7 @@ body {
     border: none;
     color: #FFF5EB !important;
     padding: 5px 20px;
+    margin: 5px;
     text-align: center;
     display: inline-block;
     font-size: 15px;
@@ -182,6 +183,7 @@ body {
     text-align: center;
     display: inline-block;
     font-size: 15px;
+    margin: 5px;
 }
 
 .quick-links input:hover {
@@ -360,12 +362,13 @@ div.desc {
 .responsive {
     padding: 0 6px;
     float: left;
-    width: 24.99999%;
+    width: 48.99999%;
+    overflow: hidden;
 }
 
 @media only screen and (max-width: 700px) {
     .responsive {
-        width: 49.99999%;
+        width: 100%;
         margin: 6px 0;
     }
 }
