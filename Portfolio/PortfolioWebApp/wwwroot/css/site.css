@@ -334,53 +334,49 @@ body {
 
 /* 
     ---- Responsive Image Gallery ----
-    ---- CREDIT: https://www.w3schools.com/howto/howto_css_image_gallery.asp ----
+    ---- CREDIT: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp ----
 */
 
-div.gallery {
-    border: 1px solid #ccc;
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
 }
 
-    div.gallery:hover {
-        border: 1px solid #777;
-    }
-
-    div.gallery img {
-        width: 100%;
-        height: auto;
-    }
-
-div.desc {
-    padding: 15px;
-    text-align: center;
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
 }
 
-* {
-    box-sizing: border-box;
+.gallery-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
 }
 
-.responsive {
-    padding: 0 6px;
-    float: left;
-    width: 48.99999%;
-    overflow: hidden;
+.gallery-column img:hover {
+    color: #FFF5EB;
+    opacity: 80%;
+    transition: 0.5s;
+    transform: scale(0.97, 0.97);
 }
 
-@media only screen and (max-width: 700px) {
-    .responsive {
-        width: 100%;
-        margin: 6px 0;
-    }
-}
 
-@media only screen and (max-width: 500px) {
-    .responsive {
-        width: 100%;
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .gallery-column {
+        flex: 50%;
+        max-width: 50%;
     }
 }
 
-.clearfix:after {
-    content: "";
-    display: table;
-    clear: both;
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .gallery-column {
+        flex: 100%;
+        max-width: 100%;
+    }
 }
