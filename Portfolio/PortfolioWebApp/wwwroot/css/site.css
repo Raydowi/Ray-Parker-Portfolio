@@ -349,6 +349,9 @@ body {
     flex: 50%;
     max-width: 50%;
     padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .gallery-column img {
