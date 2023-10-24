@@ -265,6 +265,14 @@ body {
     overflow: hidden;
 }
 
+#Leaf-It-Behind .card-bg {
+    background-image: url("../Portfolio/WhiskerWitcheryThumbnail.png");
+    background-size: cover;
+    background-position: left;
+    overflow: hidden;
+}
+
+
 .card-bg {
     height:100%;
 }
