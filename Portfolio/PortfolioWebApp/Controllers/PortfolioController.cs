@@ -14,5 +14,10 @@ namespace PortfolioWebApp.Controllers
             return View();
         }
 
+        public IActionResult LeafItBehind()
+        {
+            return View();
+        }
+
     }
 }
