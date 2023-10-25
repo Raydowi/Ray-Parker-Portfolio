@@ -264,17 +264,18 @@ body {
 
 #Leaf-It-Behind .card-bg {
     background-image: url("../Portfolio/LIB/LeafItBehindTitle.gif");
-    background-size: cover;
     background-position: center;
-    overflow: hidden;
+}
+
+#HiveQuest .card-bg {
+    background-image: url("../Portfolio/HQ/TheBuzz.png");
+    background-position: center;
 }
 
 #Ray-Tracing .card-bg {
     background-image: url("../Portfolio/Software/RayTracingProject.png");
-    background-size: cover;
-    background-position: center;
-    overflow: hidden;
 }
+
 
 .card-bg {
     background-size: cover;
