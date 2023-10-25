@@ -260,9 +260,6 @@ body {
 
 #Whisker-Witchery .card-bg {
     background-image: url("../Portfolio/WhiskerWitcheryThumbnail.png");
-    background-size: cover;
-    background-position: left;
-    overflow: hidden;
 }
 
 #Leaf-It-Behind .card-bg {
@@ -272,8 +269,18 @@ body {
     overflow: hidden;
 }
 
+#Ray-Tracing .card-bg {
+    background-image: url("../Portfolio/Software/RayTracingProject.png");
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
 .card-bg {
-    height:100%;
+    background-size: cover;
+    background-position: left;
+    overflow: hidden;
+    height: 100%;
 }
 
 .card-bg:hover, .hide:hover {
