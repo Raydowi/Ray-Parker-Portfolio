@@ -25,8 +25,12 @@
                     <input type="button" onClick="document.getElementById('Software-Dev').scrollIntoView();" value="Software Dev" />
                 </div>
                 <div class="column">
-                    <input type="button" onClick="document.getElementById('2D-Art').scrollIntoView();" value="2D Illustrations" />
+                    <input type="button" onClick="document.getElementById('2D-Art').scrollIntoView();" value="2D Art" />
                 </div>
+                <div class="column">
+                    <input type="button" onClick="document.getElementById('3D-Art').scrollIntoView();" value="3D Art" />
+                </div>
+
             </div>
         </section>
 
@@ -83,8 +87,42 @@
                     <div class="column 2">
                         <!-- Senior Hearts -->
                         <div id="Senior-Hearts" class="card">
-                            <h1 class="card-text title-white">Senior Hearts</h1>
+                            <a class="card-bg" asp-controller="Portfolio" asp-action="SeniorHearts">
+                                <h1 class="card-text title-white">Senior Hearts</h1>
+                            </a>
+                            <div class="hide title-white card-fonts">
+                                <div class="column">
+                                    <h3 class="title-white">Senior Hearts</h3>
+                                    <hr />
+                                    <h5 class="title-white" style="font-size: 26px;"><b>Personal Contributions:</b></h5>
+                                    <div class="column">
+                                        <ul class="title-white" style="font-size: 22px; text-align: left;">
+                                            <li>
+                                                Software Engineering
+                                            </li>
+                                            <li>
+                                                Character Design
+                                            </li>
+                                            <li>
+                                                2D Illustrations
+                                            </li>
+                                        </ul>
+                                        <br />
+                                    </div>
+                                    <div class="row">
+                                        <div style="text-align:right; width: max-content; flex-grow:10; font-family:'Courier New'" class="column">
+                                            <h5 style="text-align: right; padding-top: 3px;" class="text-white">
+                                                READ MORE
+                                            </h5>
+                                        </div>
+                                        <div class="column">
+                                            <img src="~/Portfolio/Icons/next.png" style="width:100%; filter:invert(1); margin-left:auto;" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+
                     </div>
                 </div>
                 <div class="row 2">
@@ -271,10 +309,8 @@
 
         <!-- 2D ILLUSTRATION SECTION -->
         <section id="2D-Art">
-            <h2> <b>2D Illustrations</b></h2>
+            <h2> <b>2D Art</b></h2>
             <br />
-
-
             <div class="gallery-row">
                 <div class="gallery-column">
                     <a target="_blank" href="/Portfolio/2D/steppin_stones.png">
@@ -303,6 +339,27 @@
                 </div>
             </div>
 
+        </section>
+
+        <hr />
+
+        <!-- 3D PORTFOLIO SECTION -->
+        <section id="3D-Art">
+            <h2> <b>3D Art</b></h2>
+            <br />
+
+            <div class="gallery-row">
+                <div class="gallery-column">
+                    <a target="_blank" href="/Portfolio/3D/WalkCycle_RayParker.gif">
+                        <img src="/Portfolio/3D/WalkCycle_RayParker.gif" alt=" - Ray Parker">
+                    </a>
+                </div>
+                <div class="gallery-column">
+                    <a target="_blank" href="/Portfolio/3D/SneakCycle_RayParker.gif">
+                        <img src="/Portfolio/3D/SneakCycle_RayParker.gif" alt=" - Ray Parker">
+                    </a>
+                </div>
+            </div>
         </section>
 
     </div>

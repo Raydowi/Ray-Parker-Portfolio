@@ -262,6 +262,10 @@ body {
     background-image: url("../Portfolio/WhiskerWitcheryThumbnail.png");
 }
 
+#Senior-Hearts .card-bg {
+    background-image: url("../Portfolio/SH/SeniorHearts.png");
+}
+
 #Leaf-It-Behind .card-bg {
     background-image: url("../Portfolio/LIB/LeafItBehindTitle.gif");
     background-position: center;
@@ -291,7 +295,7 @@ body {
     box-shadow: 3px 3px 15px 7px rgba(0,0,0,0.25), -3px -3px 15px 7px rgba(0,0,0,0.22);
 }
 
-#Whisker-Witchery .card-bg:hover, #Senior-Hearts .card-bg:hover, #Leaf-It-Behind .card-bg:hover, #HiveQuest .card-bg:hover {
+.card-bg:hover {
     filter: brightness(20%);
 }
 
