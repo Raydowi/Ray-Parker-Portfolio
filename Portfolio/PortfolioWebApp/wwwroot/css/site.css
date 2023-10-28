@@ -338,11 +338,21 @@ body {
 
 .icons {
     height: 250px;
-    width: 200px;
-    padding: 20px;
+    width: 210px;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.icons h5 {
+    height: 250px;
+}
+
+.icons img {
+    width: 90%;
+    padding: 20px;
+}
 
 .center-section {
     display: flex;
@@ -413,4 +423,10 @@ body {
 
 .game-project h3 {
     text-align: center;
+}
+
+.hover-img:hover {
+    transition: 0.5s;
+    transform: scale(0.95, 0.95);
+    filter: brightness(80%);
 }
