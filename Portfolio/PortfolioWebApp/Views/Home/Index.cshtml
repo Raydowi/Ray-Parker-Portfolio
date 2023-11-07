@@ -33,44 +33,13 @@
 </head>
 
 <body>
-
-    <section class="light-autumn-bg" style="max-height:300px;" data-aos="fade-up">
-        <div class="row regular">
-            <h1 style="padding: 40px; text-align:center;"><b>Hi, I'm Ray!</b></h1>
-            <h4 style="text-align:center;"> I am a <span>software engineer</span> and a <span>technical artist</span>.</h4>
-            <br />
-            <div class="flex-container">
-                <button onclick="window.location.href = '/Portfolio';" class="nav-link column button" style="margin:10px; padding: 10px 10px 10px 10px;">
-                    Portfolio
-                </button>
-                <button onclick="window.location.href = '/Home/Contact';" class="nav-link column button" style="margin:10px; padding: 10px 10px 10px 10px;">
-                    Contact
-                </button>
-                <button class="nav-link column button" style="margin:10px; padding: 10px 10px 10px 10px;" href="~/About/Ray_Parker_CV.pdf" download>
-                    Download CV
-                </button>
-            </div>
-        </div>
-    </section>
-
-    <section>
-
-    </section>
-
-
-    <section>
-        <div style="padding: 70px 0; height: auto" class="row regular">
-            <div style="padding: 80px;" class="col-lg-6 pt-4 pt-lg-0 content" data-aos="fade-left">
-                <h1 style="padding: 40px 0; text-align:center;"><b>Hi, I'm Ray! HOME PAGE.</b></h1>
-                <h4> I am a <span>software engineer</span> that loves to create and illustrate dazzling applications. Thank you for visiting my portfolio!</h4>
-                <br>                  
-                <h4>In 2023, I graduated from the University of Utah with a Bachelor's in Honors Computer Science and an emphasis in Games. I am searching for the right position where I can <span>use my creative and technical skills to create fun, engaging applications.</span> I want to create interactive experiences that leave a lasting impact!</h4>
+    <div class="regular">
+        <section class="light-autumn-bg" style="max-height:300px;" data-aos="fade-up">
+            <div class="row regular">
+                <h1 style="padding: 30px; text-align:center;"><b>Hi, I'm Ray!</b></h1>
+                <h4 style="text-align:center;"> I am a <span>software engineer</span> and a <span>technical artist</span>.</h4>
                 <br />
-                <br />
-            </div>
-            <div style="position: relative; display: flex; overflow: hidden; padding: 25px 30px;" class="autumn-bg col-lg-6" data-aos="fade-right">
-                <img class="center-child-img" src="~/About/Icon Test.png" alt="">
-                <div id="index-button-row" class="flex-container center-child-img">
+                <div class="flex-container" style="margin: 10px;margin-top: 30px;">
                     <button onclick="window.location.href = '/Portfolio';" class="nav-link column button" style="margin:10px; padding: 10px 10px 10px 10px;">
                         Portfolio
                     </button>
@@ -78,12 +47,103 @@
                         Contact
                     </button>
                     <button class="nav-link column button" style="margin:10px; padding: 10px 10px 10px 10px;" href="~/About/Ray_Parker_CV.pdf" download>
-                        Download CV                        
+                        Download CV
                     </button>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+        <section>
+            <div style="margin:10px; padding: 10px">
+                <div class="row 1">
+                    <div class="column 1">
+                        <!-- Whisker Witchery -->
+                        <div id="Whisker-Witchery" class="card">
+                            <a class="card-bg" asp-controller="Portfolio" asp-action="WhiskerWitchery">
+                                <h1 class="card-text title-white">Whisker Witchery</h1>
+                            </a>
+                            <div class="hide title-white card-fonts">
+                                <div class="column">
+                                    <h3 class="title-white">Whisker Witchery</h3>
+                                    <hr />
+                                    <h5 class="title-white" style="font-size: 26px;"><b>Personal Contributions:</b></h5>
+                                    <div class="column">
+                                        <ul class="title-white" style="font-size: 22px; text-align: left;">
+                                            <li>
+                                                Software Engineering
+                                            </li>
+                                            <li>
+                                                Presentations & User Research
+                                            </li>
+                                            <li>
+                                                UI/UX Design
+                                            </li>
+                                            <li>
+                                                2D Illustrations & Promotional Materials
+                                            </li>
+                                        </ul>
+                                        <br />
+                                    </div>
+                                    <div class="row">
+                                        <div style="text-align:right; width: max-content; flex-grow:10; font-family:'Courier New'" class="column">
+                                            <h5 style="text-align: right; padding-top: 3px;" class="text-white">
+                                                READ MORE
+                                            </h5>
+                                        </div>
+                                        <div class="column">
+                                            <img src="~/Portfolio/Icons/next.png" class="card-arrow" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column 2">
+                        <!-- Leaf It Behind -->
+                        <div id="Leaf-It-Behind" class="card">
+                            <a class="card-bg" asp-controller="Portfolio" asp-action="LeafItBehind">
+                                <h1 class="card-text title-white">Leaf It Behind</h1>
+                            </a>
+                            <div class="hide title-white card-fonts">
+                                <div class="column">
+                                    <h3 class="title-white">Leaf It Behind</h3>
+                                    <hr />
+                                    <h5 class="title-white" style="font-size: 26px;"><b>Personal Contributions:</b></h5>
+                                    <div class="column">
+                                        <ul class="title-white" style="font-size: 22px; text-align: left;">
+                                            <li>
+                                                Character Design
+                                            </li>
+                                            <li>
+                                                Character Animation
+                                            </li>
+                                            <li>
+                                                2D Illustrations
+                                            </li>
+                                            <li>
+                                                Background Art
+                                            </li>
+                                        </ul>
+                                        <br />
+                                    </div>
+                                    <div class="row">
+                                        <div style="text-align:right; width: max-content; flex-grow:10; font-family:'Courier New'" class="column">
+                                            <h5 style="text-align: right; padding-top: 3px;" class="text-white">
+                                                READ MORE
+                                            </h5>
+                                        </div>
+                                        <div class="column">
+                                            <img src="~/Portfolio/Icons/next.png" class="card-arrow" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
