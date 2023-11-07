@@ -149,11 +149,8 @@ body {
 
 .light-autumn-bg {
     background-image: url("../About/LightAutumnBG_AdobeStock.png");
-    background-repeat: no-repeat;
-    overflow: hidden;
-    background-position: unset;
+    background-position: center;
     background-size: cover;
-    height: 650px;
 }
 
 .button {
