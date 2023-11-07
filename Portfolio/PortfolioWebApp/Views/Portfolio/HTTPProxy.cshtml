@@ -19,27 +19,44 @@
                 <hr>
                 <div class="dark-brown-text">
                     <p>
-                        <span> Summary of program. </span> Further details of project, credibility, etc. <br>
+                        <span> This is a simple HTTP Web Proxy</span> that handles communicate between the client (browser) and the server (web server).
                     </p>
-
-                    <p> <span>Languages:</span> Python yadda yadda :)</p>
-
+                    <br />
                     <p>
-                        GitHub Repo: TBD
+                        Using web proxies can improve performance, allow content filtering, and allow better privacy between client and server. When the proxy receives a client's request, the proxy opens a connection to the server and passes on the request. The proxy receives the reply form the server and then sends that reply back to the client. This is an HTTP/1.0 proxy with basic object-caching and domain-blocking features, and it handles multiple concurrent requests at any given time.
                     </p>
+                    <br />
+                    <p>
+                        Languages: Python <br />
+                    </p>
+
+                    <h6> Note: GitHub Repository is shared upon request </h6>
+
+                    <hr />
+                    <!-- VIDEO -->
+                    <div class="center-section" style="height: 500px;">
+                        <iframe style="height: 100%; width: 100%;" align="middle"
+                                src="https://www.youtube.com/embed/OSgwQWAQJak?autoplay=1&mute=1&loop=1">
+                        </iframe>
+                    </div>
+
+                    <!-- TESTED FUNCTIONS -->
+                    <hr />
+                    <p style="font-size: 18px;">
+                        The functionality of this web proxy has been thoroughly tested. These tested the accuracy of the following functionalities:
+                    </p>
+                    <ul style="font-size: 16px;">
+                        <li>Handles consecutive requests without dying, returns intended webpages from webservers, and forwards server responses to clients without modification.</li>
+                        <li>Consistently handles communication between clients and websevers, including large server responses that may not fit in a single buffer.</li>
+                        <li>When the client provides GET headers, the proxy parses and creates GET requests to send to the appropriate server. Any malformed GET requests are returned with an error. </li>
+                        <li>Only works with GET HTTP methods through HTTP 1.0. Malformed headers + requests, non-GET HTTP methods, malformed URIs, and wrong HTTP versions are denied.</li>
+                        <li>Properly handles concurrent connections using multi-threading. The proxy can handle hanging connections, slow connections, and responsive connections at the same time. Additionally, it has been stress tested to receive multiple concurrent requests and still function as intended.</li>
+                        <li>Utilizes local cache functionalities to improve performance. When a web request is made, the server's response is stored locally, so the proxy can respond with the server's request without having to connect to the server for future client requests. In this case, conditional GETs are sent to the server instead to make sure the object has not been modified since the request was cached. The cache can be enabled or disabled, and the cache can be flushed at any time as well. The saved blocklist is not lost when switching between enabled/disabled states.</li>
+                        <li>Utilizes blocklist functionalities. If the client tries to connect to a server within the blocklist, the proxy does not actually connect the server and instead sends a "403 Forbidden" response. The blocklist can be enabled or disabled, and the blocklist can be flushed at any time. Additionally, items can be individually added and removed from the blocklist at any time. The saved blocklist is not lost when switching between enabled/disabled states.</li>
+                    </ul>
                 </div>
 
             </div>
         </section>
-
-        <!-- VIDEO + ICONS SECTION -->
-        <section>
-            <div class="center-section" style="height: 500px;">
-                <iframe style="height: 100%; width: 100%;" align="middle"
-                        src="https://www.youtube.com/embed/OSgwQWAQJak?autoplay=1&mute=1&loop=1">
-                </iframe>
-            </div>
-        </section>
-
     </div>
 </body>
