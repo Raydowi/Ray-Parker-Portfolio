@@ -93,6 +93,9 @@ body {
     flex: 1;
 }
 
+.about-column {
+    padding: 0px 50px 0px 100px;
+}
 
 .p {
     font-size: 20px;
@@ -412,6 +415,10 @@ body {
     margin-left:auto;
 }
 
+.personal-contributions {
+    font-size: 26px;
+}
+
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
     .gallery-column {
@@ -430,6 +437,35 @@ body {
     .column {
         flex: 100%;
         max-width: 100%;
+    }
+
+    .about-column {
+        padding: 0px;
+    }
+
+    #index-button-row {
+        display: flex;
+        flex-direction: column;
+        left: 45%;
+        top: 65%;
+    }
+
+    .center-child-img {
+        width: 80%;
+        top: 30%;
+    }
+
+    .card {
+        margin: 0px;
+    }
+
+    .hide {
+        margin: 0px;
+        height: 150%;
+    }
+
+    .personal-contributions {
+        font-size: 18px;
     }
 }
 
