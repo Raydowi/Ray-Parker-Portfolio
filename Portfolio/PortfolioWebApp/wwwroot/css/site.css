@@ -222,7 +222,7 @@ body {
     height: auto;
 }
 
-#Gave-Dev.div {
+#Game-Dev.div {
     margin:5px;
 }
 
@@ -283,7 +283,7 @@ body {
 }
 
 #Senior-Hearts .card-bg {
-    background-image: url("../Portfolio/SH/SeniorHearts.png");
+    background-image: url("../Portfolio/SH/SeniorHearts.webp");
 }
 
 #Leaf-It-Behind .card-bg {
@@ -292,18 +292,17 @@ body {
 }
 
 #HiveQuest .card-bg {
-    background-image: url("../Portfolio/HQ/TheBuzz.png");
+    background-image: url("../Portfolio/HQ/TheBuzz.webp");
     background-position: center;
 }
 
 #Ray-Tracing .card-bg {
-    background-image: url("../Portfolio/Software/RayTracingProject.png");
+    background-image: url("../Portfolio/Software/RayTracingProject.webp");
 }
 
 #HTTP-Proxy .card-bg {
-    background-image: url("../Portfolio/Software/ProxyProject.png");
+    background-image: url("../Portfolio/Software/ProxyProject.webp");
 }
-
 
 .card-bg {
     background-size: cover;
