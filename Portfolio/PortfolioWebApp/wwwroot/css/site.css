@@ -148,7 +148,7 @@ body {
 }
 
 .autumn-bg {
-    background-image: url("../About/AutumnBG_AdobeStock.jpg");
+    background-image: url("../About/AutumnBG_AdobeStock.webp");
     background-repeat: no-repeat;
     overflow: hidden;
     background-position: center;
@@ -157,7 +157,7 @@ body {
 }
 
 .light-autumn-bg {
-    background-image: url("../About/LightAutumnBG_AdobeStock.png");
+    background-image: url("../About/LightAutumnBG_AdobeStock.webp");
     background-position: center;
     background-size: cover;
 }
@@ -214,7 +214,7 @@ body {
 }
 
 .quick-links.autumn-bg {
-    background-image: url("../About/AutumnBG_AdobeStock.jpg");
+    background-image: url("../About/AutumnBG_AdobeStock.webp");
     background-repeat: no-repeat;
     overflow: hidden;
     background-position: center;
