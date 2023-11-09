@@ -24,7 +24,6 @@ html {
 body {
     background-color: #FFF5EB;
     text-align: left;
-    text-indent: 25px;
     margin-bottom: 60px;
 }
 
@@ -120,7 +119,15 @@ body {
     width: 110vh;
 }
 
-.center-child-img {
+.center-child-img-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%,-50%);
+}
+
+.center-child-img-2 {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -136,7 +143,7 @@ body {
 
 .regular h1, h2, h3, h4, h5, h6 {
     font-weight: 600;
-    text-indent: 25px;
+    text-indent: 20px;
     text-align: left;
     color: #9c664b;
 }
@@ -415,8 +422,20 @@ body {
     margin-left:auto;
 }
 
-.personal-contributions {
+.mobile-header-text {
+    text-align: center;
     font-size: 26px;
+}
+
+.mobile-text {
+    font-size: 22px;
+    text-align: left;
+}
+
+
+.home-section {
+    padding: 70px 10px 20px 10px;
+    height: auto;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -450,22 +469,38 @@ body {
         top: 65%;
     }
 
-    .center-child-img {
-        width: 80%;
-        top: 30%;
+    .center-child-img-1 {
+        width: 80% !important;
+        top: 30% !important;
+    }
+
+    .center-child-img-2 {
+        top: 73% !important;
+    }
+
+    .autumn-bg {
+        height: 500px;
     }
 
     .card {
-        margin: 0px;
+        margin: 0px !important;
     }
 
     .hide {
-        margin: 0px;
-        height: 150%;
+        margin: 0px !important;
+        height: 150% !important;
     }
 
-    .personal-contributions {
-        font-size: 18px;
+    .mobile-header-text {
+        font-size: 20px;
+    }
+
+    .mobile-text {
+        font-size: 16px;
+    }
+
+    .home-section {
+        padding: 0px 10px !important;
     }
 }
 
