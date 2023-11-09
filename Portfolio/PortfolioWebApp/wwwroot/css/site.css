@@ -81,7 +81,6 @@ body {
 .column {
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
     flex: 1;
 }
 
@@ -93,7 +92,7 @@ body {
 }
 
 .about-column {
-    padding: 0px 50px 0px 100px;
+    padding: 10px 50px 0px 100px;
 }
 
 .p {
@@ -438,9 +437,8 @@ body {
     text-align: left;
 }
 
-
 .home-section {
-    padding: 70px 10px 20px 10px;
+    margin: 0px;
     height: auto;
 }
 
@@ -460,6 +458,9 @@ body {
     margin:0px 250px;
 }
 
+.site-title {
+    visibility:visible;
+}
 
 /* Responsive layout - makes a two column-layout instead of four columns */
 @media screen and (max-width: 800px) {
@@ -512,8 +513,17 @@ body {
     }
 
     .card {
+        height: 200px;
         margin: 0px !important;
     }
+
+        .card h3, .card h5 {
+            font-size: 10px;
+        }
+
+        .card li {
+            font-size: 12px;
+        }
 
     .hide {
         margin: 0px !important;
@@ -529,7 +539,7 @@ body {
     }
 
     .home-section {
-        padding: 0px 10px !important;
+        padding: 0px !important;
     }
 
     .card-arrow {
@@ -558,9 +568,9 @@ body {
         max-width: 100%;
     }
 
-    .odd-icon img {
-        max-height: 150px;
-    }
+        .odd-icon img {
+            max-height: 150px;
+        }
 
     .contact-margin, .contact-margin-2 {
         margin: 0px;
@@ -568,6 +578,19 @@ body {
 
     #Senior-Hearts .card-bg {
         background-position: right;
+    }
+
+    .site-title, .read-more {
+        visibility: hidden;
+        height: 0px;
+    }
+
+    .button-row {
+        width: 100%;
+    }
+
+    .center-section {
+        display: flex;
     }
 }
 
