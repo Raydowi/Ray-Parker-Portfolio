@@ -1,0 +1,608 @@
+/*
+    HEX CODES:
+    Cream: #FFF5EB
+    Soft brown:#DFBF9F
+    Medium brown: #7E5439
+    Hard Brown: #592B15
+*/
+
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    background-color: #FFF5EB;
+    text-align: left;
+    margin-bottom: 60px;
+}
+
+/* ---- Text/BG color classes ----*/
+.cream-text {
+    color: #FFF5EB;
+}
+
+.med-brown-text {
+    font-weight: 600;
+    text-align: justify;
+    color: #9c664b;
+}
+
+.med-brown-bg {
+    background-color: #7E5439;
+}
+
+.dark-brown-text {
+    color: #592B15;
+}
+
+/* ---- Navbar ----*/
+
+.nav-link:hover {
+    color: #FFF5EB !important;
+    opacity: 50%;
+    --bs-link-hover-color: #FFF5EB;
+}
+
+#navbar {
+    transition: ease-in-out 0.3s;
+    background-color: #7E5439;
+}
+
+/* ---- Flexbox ----*/
+
+.flex-container div {
+    margin: 10px;
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.arrow-column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+
+.about-column {
+    padding: 10px 50px 0px 100px;
+}
+
+.p {
+    font-size: 20px;
+    text-indent: 25px;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* ---- Index Page ----*/
+
+.center-parent-img {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 110vh;
+}
+
+.center-child-img-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%,-50%);
+}
+
+.center-child-img-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 60%;
+    transform: translate(-50%,-50%);
+}
+
+.regular {
+    margin: 10px;
+}
+
+.regular span {
+    color: #000000;
+    border-bottom: 2px solid #9c664b;
+    font-weight: bold;
+}
+
+.regular h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    text-indent: 20px;
+    text-align: left;
+    color: #9c664b;
+}
+
+.autumn-bg {
+    background-image: url("../About/AutumnBG_AdobeStock.webp");    
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    height: 650px;
+}
+
+.light-autumn-bg {
+    background-image: url("../About/LightAutumnBG_AdobeStock.webp");
+    background-position: center;
+    background-size: cover;
+}
+
+.button {
+    background-color: #000000;
+    border: none;
+    color: #FFF5EB !important;
+    padding: 5px 20px;
+    margin: 5px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+}
+
+.button:hover {
+    transition: 0.5s;
+    transform: scale(0.95, 0.95);
+}
+
+#index-button-row {
+    justify-content: center;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    width: 80%;
+    transform: translate(-50%,-50%);
+    padding: 10px;
+}
+
+/* ---- Portfolio Page ----*/
+
+.quick-links {
+    margin: 10px;
+    padding: 35px 35px;
+}
+
+.quick-links input {
+    background-color: #000000;
+    border: none;
+    color: #FFF5EB;
+    padding: 5px 20px;
+    text-align: center;
+    display: inline-block;
+    font-size: 15px;
+    margin: 5px;
+}
+
+.quick-links input:hover {
+    color: #FFF5EB;
+    opacity: 75%;
+    transition: 0.5s;
+    transform: scale(0.95, 0.95);
+}
+
+.quick-links.autumn-bg {
+    background-image: url("../About/AutumnBG_AdobeStock.webp");
+    background-repeat: no-repeat;
+    overflow: hidden;
+    background-position: center;
+    background-size: cover;
+    height: auto;
+}
+
+#Game-Dev.div {
+    margin:5px;
+}
+
+.hide {
+    position: absolute;
+    transform: translateY(-130%);
+    pointer-events: none;
+    margin: 10px;
+    height: 90%;
+}
+
+.card-fonts {
+    padding: 15px;
+    text-align: center !important;
+}
+
+.card {
+    height: 400px;
+    margin: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #DFBF9F;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(223, 191, 159, 0.5);
+    overflow: hidden;
+    pointer-events: auto;
+}
+
+.card-text-old {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    width:100%;
+}
+
+.card-text {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center !important;
+}
+
+#Whisker-Witchery .card-bg {
+    background-image: url("../Portfolio/WhiskerWitcheryThumbnail.png");
+}
+
+#Senior-Hearts .card-bg {
+    background-image: url("../Portfolio/SH/SeniorHearts.webp");
+}
+
+#Leaf-It-Behind .card-bg {
+    background-image: url("../Portfolio/LIB/LeafItBehindTitle.gif");
+    background-position: center;
+}
+
+#HiveQuest .card-bg {
+    background-image: url("../Portfolio/HQ/TheBuzz.webp");
+    background-position: center;
+}
+
+#Ray-Tracing .card-bg {
+    background-image: url("../Portfolio/Software/RayTracingProject.webp");
+}
+
+#HTTP-Proxy .card-bg {
+    background-image: url("../Portfolio/Software/ProxyProject.webp");
+}
+
+.card-bg {
+    background-size: cover;
+    background-position: left;
+    overflow: hidden;
+    height: 100%;
+}
+
+.card-bg:hover, .hide:hover {
+    transition: ease-in-out 0.3s;
+    transform: scale(1.1, 1.1);
+    
+    box-shadow: 3px 3px 15px 7px rgba(0,0,0,0.25), -3px -3px 15px 7px rgba(0,0,0,0.22);
+}
+
+.card-bg:hover {
+    filter: brightness(20%);
+}
+
+.card-bg:hover h1 {
+    transform: translateY(130%);
+    transition: all 0.5s cubic-bezier(.25,.8,.25,1);
+}
+
+.card:hover .hide {
+    transition: ease-in-out 0.45s;
+    transform: translateY(0%);
+}
+
+.title-white {
+    color: #FFF5EB !important;
+}
+
+.title-black {
+    color: black !important;
+}
+
+.hr {
+    margin: 20px;
+    padding: 20px;
+    color: #592B15;
+    width: 2px;
+}
+
+/* ---- Whisker Witchery ----*/
+
+.game-title {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center !important;
+}
+
+.videosize {
+    height: 500px;
+}
+
+
+.center-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons {
+    flex: 20%;
+    max-width: 20%;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icons img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.icons h5 {
+    text-align: center;
+}
+
+/* 
+    ---- Responsive Image Gallery ----
+    ---- CREDIT: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp ----
+*/
+
+
+.gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.gallery-column {
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery-column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+.gallery-column img:hover {
+    color: #FFF5EB;
+    opacity: 80%;
+    transition: 0.5s;
+    transform: scale(0.97, 0.97);
+}
+
+.card-arrow {
+    width:100%;
+    filter:invert(1);
+    margin-left:auto;
+}
+
+.mobile-header-text {
+    text-align: center;
+    font-size: 26px;
+}
+
+.mobile-text {
+    font-size: 22px;
+    text-align: left;
+}
+
+.home-section {
+    margin: 0px;
+    height: auto;
+}
+
+.video-height {
+    height: 500px;
+}
+
+.icons img {
+    padding: 20px;
+}
+
+.contact-margin {
+    margin: 50px 300px;
+}
+
+.contact-margin-2 {
+    margin:0px 250px;
+}
+
+.site-title {
+    visibility:visible;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .gallery-column {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .regular h1, h2, h3, h4, h5, h6 {
+        text-indent: 0px !important;
+    }
+
+    .gallery-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .about-column {
+        padding: 0px;
+    }
+
+    #index-button-row {
+        display: flex;
+        flex-direction: column;
+        left: 45%;
+        top: 65%;
+        padding: 5px !important;
+    }
+
+    .center-child-img-1 {
+        width: 80% !important;
+        top: 30% !important;
+    }
+
+    .center-child-img-2 {
+        top: 73% !important;
+    }
+
+    .autumn-bg {
+        height: 500px;
+    }
+
+    .card {
+        height: 200px;
+        margin: 0px !important;
+    }
+
+        .card h3, .card h5 {
+            font-size: 10px;
+        }
+
+        .card li {
+            font-size: 12px;
+        }
+
+    .hide {
+        margin: 0px !important;
+        height: 150% !important;
+    }
+
+    .mobile-header-text {
+        font-size: 20px;
+    }
+
+    .mobile-text {
+        font-size: 16px;
+    }
+
+    .home-section {
+        padding: 0px !important;
+    }
+
+    .card-arrow {
+        width: 0px !important;
+    }
+
+    .game-project p {
+        padding: 10px 20px;
+    }
+
+    .video-height {
+        height: 250px;
+    }
+
+    .center-section {
+        display: block;
+    }
+
+    .icons {
+        flex: 50%;
+        max-width: 50%;
+    }
+
+    .odd-icon {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+        .odd-icon img {
+            max-height: 150px;
+        }
+
+    .contact-margin, .contact-margin-2 {
+        margin: 0px;
+    }
+
+    #Senior-Hearts .card-bg {
+        background-position: right;
+    }
+
+    .site-title, .read-more {
+        visibility: hidden;
+        height: 0px;
+    }
+
+    .button-row {
+        width: 100%;
+    }
+
+    .center-section {
+        display: flex;
+    }
+}
+
+.game-project p {
+    font-size: 18px;
+}
+
+.game-project li {
+    font-size: 20px;
+}
+
+.game-project h3 {
+    text-align: center;
+}
+
+.hover-img:hover {
+    transition: 0.5s;
+    transform: scale(0.95, 0.95);
+    filter: brightness(80%);
+}

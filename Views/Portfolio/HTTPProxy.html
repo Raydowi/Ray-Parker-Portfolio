@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Ray Parker">
+
+    <title>Ray Parker Portfolio - Contact</title>
+
+    <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.2/examples/jumbotron/">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+          rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+          crossorigin="anonymous">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
+
+    <link href="/docs/5.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+
+    <!-- Template Main CSS File -->
+    <link href="../../assets/css/site.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom med-brown-bg">
+        <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none site-title" asp-area="" asp-controller="Home" asp-action="Index">
+            <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+            <span class="cream-text fs-4">Ray Parker</span>
+        </a>
+        <ul class="nav nav-pills">
+            <li class="nav-item">
+                <a class="nav-link cream-text header-color" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link cream-text header-color" href="Index.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link cream-text header-color" href="../Home/contact.html">Contact</a>
+            </li>
+        </ul>
+    </header>
+
+    <div class="regular game-project">
+        <!-- TITLE SECTION -->
+        <section>
+            <div>
+                <h1 class="game-title">
+                    HTTP Web Proxy <br>
+                </h1>
+                <hr>
+                <div class="display-4" style="font-size: 25px;">
+                    <h5 style="text-align:center;"> <span>SKILLS:</span> Client-Server Communication; Multi-Threading & Multi-Client Functionality; Web Caching; Web Filtering & Blocking </h5>
+                </div>
+                <hr>
+                <div class="dark-brown-text">
+                    <p>
+                        <span> This is a simple HTTP Web Proxy</span> that handles communicate between the client (browser) and the server (web server).
+                    </p>
+                    <br />
+                    <p>
+                        Using web proxies can improve performance, allow content filtering, and allow better privacy between client and server. When the proxy receives a client's request, the proxy opens a connection to the server and passes on the request. The proxy receives the reply form the server and then sends that reply back to the client. This is an HTTP/1.0 proxy with basic object-caching and domain-blocking features, and it handles multiple concurrent requests at any given time.
+                    </p>
+                    <br />
+                    <p>
+                        Languages: Python <br />
+                    </p>
+
+                    <h6> Note: GitHub Repository is shared upon request </h6>
+
+                    <hr />
+                    <!-- VIDEO -->
+                    <div class="center-section video-height">
+                        <iframe style="height: 100%; width: 100%;" align="middle"
+                                src="https://www.youtube.com/embed/HzWjoibvXdQ?autoplay=1&mute=1&loop=1">
+                        </iframe>
+                    </div>
+
+                    <!-- TESTED FUNCTIONS -->
+                    <hr />
+                    <p style="font-size: 18px;">
+                        The functionality of this web proxy has been thoroughly tested. These tested the accuracy of the following functionalities:
+                    </p>
+                    <ul style="font-size: 16px;">
+                        <li>Handles consecutive requests without dying, returns intended webpages from webservers, and forwards server responses to clients without modification.</li>
+                        <li>Consistently handles communication between clients and websevers, including large server responses that may not fit in a single buffer.</li>
+                        <li>When the client provides GET headers, the proxy parses and creates GET requests to send to the appropriate server. Any malformed GET requests are returned with an error. </li>
+                        <li>Only works with GET HTTP methods through HTTP 1.0. Malformed headers + requests, non-GET HTTP methods, malformed URIs, and wrong HTTP versions are denied.</li>
+                        <li>Properly handles concurrent connections using multi-threading. The proxy can handle hanging connections, slow connections, and responsive connections at the same time. Additionally, it has been stress tested to receive multiple concurrent requests and still function as intended.</li>
+                        <li>Utilizes local cache functionalities to improve performance. When a web request is made, the server's response is stored locally, so the proxy can respond with the server's request without having to connect to the server for future client requests. In this case, conditional GETs are sent to the server instead to make sure the object has not been modified since the request was cached. The cache can be enabled or disabled, and the cache can be flushed at any time as well. The saved blocklist is not lost when switching between enabled/disabled states.</li>
+                        <li>Utilizes blocklist functionalities. If the client tries to connect to a server within the blocklist, the proxy does not actually connect the server and instead sends a "403 Forbidden" response. The blocklist can be enabled or disabled, and the blocklist can be flushed at any time. Additionally, items can be individually added and removed from the blocklist at any time. The saved blocklist is not lost when switching between enabled/disabled states.</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+    </div>
+</body>
