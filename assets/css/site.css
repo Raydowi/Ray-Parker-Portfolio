@@ -27,6 +27,10 @@ body {
     margin-bottom: 60px;
 }
 
+section {
+    max-width: 1500px;
+}
+
 /* ---- Text/BG color classes ----*/
 .cream-text {
     color: #FFF5EB;
@@ -455,10 +459,6 @@ body {
 
 .site-title {
     visibility:visible;
-}
-
-.div-max-width {
-    max-width: 2600px;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
