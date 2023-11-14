@@ -29,6 +29,7 @@ body {
 
 section {
     max-width: 1500px;
+    margin: 0 auto;
 }
 
 /* ---- Text/BG color classes ----*/
@@ -127,6 +128,7 @@ section {
     top: 50%;
     left: 50%;
     width: 60%;
+    padding: 30px !important;
     transform: translate(-50%,-50%);
 }
 
@@ -199,7 +201,6 @@ section {
 /* ---- Portfolio Page ----*/
 
 .quick-links {
-    margin: 10px;
     padding: 35px 35px;
 }
 
@@ -260,6 +261,7 @@ section {
     box-shadow: 0 4px 8px 0 rgba(223, 191, 159, 0.5);
     overflow: hidden;
     pointer-events: auto;
+    max-width: 550px;
 }
 
 .card-text-old {
@@ -453,12 +455,13 @@ section {
     margin: 50px 300px;
 }
 
-.contact-margin-2 {
-    margin:0px 250px;
-}
-
 .site-title {
     visibility:visible;
+}
+
+.narrow-gallery {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
@@ -499,6 +502,7 @@ section {
     }
 
     .center-child-img-1 {
+        padding: 10px !important;
         width: 80% !important;
         top: 30% !important;
     }
@@ -571,7 +575,7 @@ section {
             max-height: 150px;
         }
 
-    .contact-margin, .contact-margin-2 {
+    .contact-margin {
         margin: 0px;
     }
 
