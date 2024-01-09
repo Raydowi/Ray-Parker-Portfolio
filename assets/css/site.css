@@ -144,6 +144,10 @@ section {
     margin: 10px;
 }
 
+.regular p {
+    margin: 30px;
+}
+
 .regular span {
     color: #000000;
     border-bottom: 2px solid #9c664b;
@@ -155,6 +159,10 @@ section {
     text-indent: 20px;
     text-align: left;
     color: #9c664b;
+}
+
+.regular h3 {
+    margin: 20px;
 }
 
 .autumn-bg {
