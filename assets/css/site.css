@@ -443,6 +443,10 @@ section {
     height: auto;
 }
 
+.portfolio-desc {
+    margin: 20px 80px;
+}
+
 .video-height {
     height: 500px;
 }
