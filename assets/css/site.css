@@ -39,7 +39,6 @@ body {
     overflow: hidden;
     padding: 25px 30px;
     border-radius: 25px;
-    box-shadow: 0rem 1rem 3rem 0rem rgba(126,84,57,0.3);
     border-radius: 0.5rem;
 }
 
@@ -152,12 +151,15 @@ body {
 }
 
 .regular {
-    
-    margin: 10px;
+    margin: 10px 80px;
 }
 
 .regular p {
     margin: 30px;
+}
+
+.regular section {
+    margin: 30px 10px;
 }
 
 .regular span {
@@ -643,7 +645,7 @@ body {
 .nav-pills li {
     display:inline-block;
     border-right:1px solid;
-    padding: 8px;
+    padding: 4px;
     color: #FFF5EB;
 }
 .nav-pills li:last-child {
