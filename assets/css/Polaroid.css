@@ -26,7 +26,7 @@
   border-top: 2px solid #eee;
   border-left: 2px solid #eee;
   transform: rotate(-1deg);
-  transition: 0.8s ease;
+  transition: 0.8s;
 
 }
 .gallery-thumb .thumb-image .img-thumbnail img {
@@ -54,7 +54,7 @@
   
 /*--- CHARACTER THUMBNAIL HOVER ---*/
 .gallery-thumb.character-thumb.gallery-item:hover {
-    transform: rotate(4deg);
+    transform: rotate(2deg);
     transform-origin: top left;
 }
 

@@ -194,6 +194,13 @@ body {
     background-size: cover;
 }
 
+.spooky-bg {
+    background-image: url("../About/trees.png");
+    background-color:#7E5439;
+    background-repeat: repeat;
+    min-height: 100px;
+}
+
 .button {
     background-color: #000000;
     border: none;
@@ -261,8 +268,7 @@ body {
     position: absolute;
     transform: translateY(-130%);
     pointer-events: none;
-    margin: 10px;
-    height: 90%;
+    padding: 30px;
 }
 
 .card-fonts {
@@ -280,18 +286,10 @@ body {
     text-align: center;
     background-color: #DFBF9F;
     border-radius: 30px;
-    box-shadow: 0 4px 8px 0 rgba(223, 191, 159, 0.5);
+    box-shadow: 0 8px 16px 0 rgba(39, 17, 10, 0.6);
     overflow: hidden;
     pointer-events: auto;
     max-width: 550px;
-}
-
-.card-text-old {
-    display: flex;
-    justify-content: center;
-    margin-top: auto;
-    background-color: rgba(0, 0, 0, 0.5);
-    width:100%;
 }
 
 .card-text {
@@ -335,14 +333,13 @@ body {
     height: 100%;
 }
 
-.card-bg:hover, .hide:hover {
+.hide:hover {
     transition: ease-in-out 0.3s;
     transform: scale(1.1, 1.1);
-    
-    box-shadow: 3px 3px 15px 7px rgba(0,0,0,0.25), -3px -3px 15px 7px rgba(0,0,0,0.22);
 }
 
 .card-bg:hover {
+    mix-blend-mode: multiply;
     filter: brightness(20%);
 }
 
@@ -421,6 +418,20 @@ body {
     padding: 0 4px;
 }
 
+.card-gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;    
+}
+
+.card-gallery-column {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 0 30px;
+}
+
 /* Create four equal columns that sits next to each other */
 .gallery-column {
     flex: 50%;
@@ -437,7 +448,7 @@ body {
     width: 100%;
 }
 
-.gallery-column img:hover {
+.regular .gallery-column img:hover {
     color: #FFF5EB;
     opacity: 80%;
     transition: 0.5s;
