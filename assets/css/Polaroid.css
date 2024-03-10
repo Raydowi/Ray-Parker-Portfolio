@@ -1,0 +1,92 @@
+/*---------------------------
+   Polaroids (CSS Snippet) by sardiine on toyhou.se
+---------------------------*/
+ 
+/*--- CENTER GALLERY ---*/
+.user-characters-gallery.characters-gallery .gallery-row {
+    justify-content: center;
+}
+ 
+/*--- CHARACTER NAME ---*/
+.thumb-caption .thumb-character-name .btn {
+  text-transform: uppercase; 
+  letter-spacing: 2px !important; 
+  font-size: 14px !important; 
+  font-family: Consolas, 'Lucida Console', monospace;
+  line-height: 1;
+  color: #757575;
+}
+  
+/*--- CHARACTER THUMBNAIL ---*/  
+.gallery-thumb.character-thumb.gallery-item {
+  margin-left: 10px;
+  padding: 15px 15px 25px 15px;
+  background: #fff;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
+  border-top: 2px solid #eee;
+  border-left: 2px solid #eee;
+  transform: rotate(-1deg);
+  transition: 0.8s ease;
+
+}
+.gallery-thumb .thumb-image .img-thumbnail img {
+  border-radius:0;
+}
+
+/*--- PAPERCLIP ---*/  
+.gallery-thumb.character-thumb .thumb-image:before {
+  content: url(https://i.imgur.com/2NzAxxP.png);
+  position: absolute;
+  left: -15px;
+  top: -20px;
+  z-index: 100000;
+}
+.img-thumbnail img {
+    background:#F8F8F8;
+}
+
+.character-thumb .thumb-image .img-thumbnail {
+  padding:0px !important; 
+  border:0px !important;
+  max-height: 300px;
+
+}
+  
+/*--- CHARACTER THUMBNAIL HOVER ---*/
+.gallery-thumb.character-thumb.gallery-item:hover {
+    transform: rotate(4deg);
+    transform-origin: top left;
+}
+
+
+/*--- DISAPPEAR CHARACTER USERNAME AND STATS ---*/
+.thumb-caption .btn {
+  background-color: transparent !important; 
+  border-color: transparent !important;
+  cursor: pointer !important;
+  margin-top: 0 !important;
+  outline: none !important
+}
+.thumb-character-stat.images {display: none;}
+.thumb-character-stat.comments {display: none;}
+.thumb-character-stat.links {display: none;}
+.thumb-character-stat.literatures {display: none;}
+.thumb-character-stat.tabs {display: none;}
+.thumb-character-stat.worlds {display: none;}
+.thumb-character-edit {
+  position: absolute;
+  right: 3px;
+  bottom: 10px;
+  opacity: .4;
+}
+.thumb-character-edit:hover {opacity: 1;}
+ 
+/*--- CREDIT (this is optional, i just left it here so others could find the og code) ---*/
+#content:after {
+  content: 'polaroid css by sardiine';
+  font-size: 10px;
+  opacity: .6;
+  right: 15px;
+  bottom: 10px;
+  position: absolute;
+}
