@@ -233,7 +233,7 @@ body {
     padding: 35px 35px;
 }
 
-.quick-links input {
+.quick-links input, .quick-links a {
     background-color: #000000;
     border: none;
     color: #FFF5EB;
@@ -661,4 +661,11 @@ body {
     border-right:none;
 }
 
-
+.cream-textbox{
+    text-align: center;
+    text-indent: 0px;
+    background-color: #FFF5EB;
+    border-radius: 25px;
+    padding: 20px;
+    border: 12px double #7E5439;
+}
