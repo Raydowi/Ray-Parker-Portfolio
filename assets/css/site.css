@@ -359,11 +359,17 @@ body {
     color: black !important;
 }
 
-.hr {
+hr {
     margin: 20px;
     padding: 20px;
     color: #592B15;
-    width: 2px;
+}
+
+/* HR propreties for*/
+.card-fonts .column hr{
+    margin: 0px;
+    padding: 10px;
+    color: #FFF5EB;    
 }
 
 /* ---- Whisker Witchery ----*/
