@@ -297,7 +297,7 @@ body {
 }
 
 #Whisker-Witchery .card-bg {
-    background-image: url("../Portfolio/WhiskerWitcheryThumbnail.png");
+    background-image: url("../Portfolio/WW/WhiskerWitcheryThumbnail.webp");
 }
 
 #Senior-Hearts .card-bg {
@@ -336,8 +336,8 @@ body {
 }
 
 .card-bg:hover {
-    transition: ease-in-out 0.3s;
     mix-blend-mode: multiply;
+    transition: ease-in-out 0.3s;
     filter: brightness(20%);
 }
 
@@ -365,8 +365,8 @@ hr {
     color: #592B15;
 }
 
-/* HR propreties for*/
-.card-fonts .column hr{
+/* HR properties for cards*/
+.card-fonts .column hr {
     margin: 0px;
     padding: 10px;
     color: #FFF5EB;    

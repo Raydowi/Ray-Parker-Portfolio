@@ -1,0 +1,83 @@
+.pic-gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 100%;    
+}
+
+.pic-gallery-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    padding: 10px;
+}
+
+.pic-card {
+    height: 250px;
+    min-width: 200px;
+    max-width: 250px;
+    margin: 20px;
+    border-radius: 30px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.pic-card:hover {
+    transform: scale(103%);
+}
+
+.pic-card-bg {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.pic-card-bg img {
+    width: 100%;
+}
+
+.pic-short {
+    scale: 200%;
+}
+
+.pic-top {
+    display: flex;
+    align-items: start;
+}
+
+.pic-bottom {
+    display: flex;
+    align-items: end;
+}
+
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 1100px) {
+    .pic-gallery-column {
+        flex: 50%;
+        max-width: 50%;
+    }
+    .pic-card{
+        min-height: 250px;
+        max-height: 350px;
+        max-width: 350px;
+    }
+    
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+    .pic-gallery-column {
+        flex: 100%;
+        max-width: 100%;
+    }
+
+    .pic-card {
+        height: 200px;
+        margin: 0px !important;
+    }
+
+}

@@ -28,8 +28,8 @@
 
     <!-- Template Main CSS File -->
     <link href="../../assets/css/site.css" rel="stylesheet">
+    <link href="../../assets/css/photo-gallery.css" rel="stylesheet">
     <link href="../../assets/css/Polaroid.css" rel="stylesheet">
-
 
 </head>
 
@@ -60,26 +60,12 @@
     <div class="About">
         <div class="user-characters-gallery characters-gallery">
             <div class="gallery-row">
-                <div class="gallery-column" style="flex: 33%; max-width: 33%; padding: 30px;">
-                    <div class="text-center gallery-thumb character-thumb gallery-item">
-                        <div class="thumb-image">
-                            <img src="../../assets/About/RayPic1.jpg" alt="Ray Parker Portrait" class="img-thumbnail"style="max-height: 350px;">
-                        </div>                    
-                        <div class="thumb-caption">
-                            <span class="thumb-character-name">
-                                <div class="btn btn-sm btn-primary character-name-badge">
-                                    Ray Parker
-                                    <p>She/They</p>
-                                </div>
-                            </span>                        
-                        </div>
-                    </div>
-                </div>
-                <div class="gallery-column" style="flex: 66%; max-width: 66%;">
+                <div class="gallery-column" style="flex: 60%; max-width: 60%;">
                     <div class="regular">
                         <div class="" data-aos="fade-right">
-                            <h1 style="padding: 30px; text-align:center;"><b>Hi, I'm Ray!</b></h1>
-                            <h4 style="text-align:center; color: #592B15"> I am a <span>software engineer</span> and a <span>technical artist</span>.</h4>
+
+                            <h1 class="display-5" style="text-align: center;  text-indent: 0px;"> <b>About</b></h1>
+                            <h4 style="text-align:center; color: #592B15"> A cute little page about who I am outside of my projects!</h4>
                             <hr />
                             <h4 style="padding: 0px;text-indent: 20px !important;"> In 2023, I graduated from the University of Utah with a Bachelor's in Honors Computer Science with a Games emphasis. In the coming years, I am planning to earn a Master's in Technical Art in Games. </h4>
                             <h4 style="padding: 20px 0px;text-indent: 20px !important;"> Since working as a freelance illustrator, I couldn't imagine a life without working in both creative and technical disciplines, hence my love for video games and web development! I am excited to use my passions to continue making innovative, interactive experiences.</h4>
@@ -87,98 +73,86 @@
                         </div>        
                     </div>
                 </div>
+                <div class="gallery-column" style="flex: 40%; max-width: 40%; padding: 30px;">
+                    <img src="../../assets/About/RayColor.png" alt="Ray Parker Doodle Portrait" >
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom spooky-bg align-items-center">
-        <body>
-            <div class="regular card-gallery-row">
-                <div class="card-gallery-column">
-                        <!-- PKMN Mystery Dungeon -->
-                        <div id="PMD" class="card">
-                            <div class="cream-text card-bg">
-                                <h1 class="card-text title-white">Pokemon Mystery Dungeon</h1>
-                            </div>
-                            <div class="hide title-white card-fonts">
-                                <div class="column">
-                                    <h3 class="title-white">Whisker Witchery</h3>
-                                    <hr />
-                                    <h5 class="title-white mobile-header-text"><b>Personal Contributions:</b></h5>
-                                    <div class="column">
-                                        <ul class="title-white mobile-text">
-                                            <li>
-                                                Software Engineering
-                                            </li>
-                                            <li>
-                                                Presentations & User Research
-                                            </li>
-                                            <li>
-                                                UI/UX Design
-                                            </li>
-                                            <li>
-                                                2D Illustrations & Promotional Materials
-                                            </li>
-                                        </ul>
-                                    </div>
-                                    <div class="row">
-                                        <div style="text-align:right; width: max-content; flex-grow:10; font-family:'Courier New'" class="column read-more">
-                                            <h5 style="text-align: right; padding-top: 3px;" class="text-white">
-                                                READ MORE
-                                            </h5>
-                                        </div>
-                                        <div class="column">
-                                            <img src="../../assets/Portfolio/Icons/next.png"  class="card-arrow" />
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                </div>
-                <div class="card-gallery-column">
-                    <!-- Leaf It Behind -->
-                    <div id="Leaf-It-Behind" class="card">
-                        <a class="cream-text card-bg" href="Views/Portfolio/LeafItBehind.html">
-                            <h1 class="card-text title-white">Leaf It Behind</h1>
-                        </a>
-                        <div class="hide title-white card-fonts">
-                            <div class="column">
-                                <h3 class="title-white">Leaf It Behind</h3>
-                                <hr />
-                                <h5 class="title-white mobile-header-text"><b>Personal Contributions:</b></h5>
-                                <div class="column">
-                                    <ul class="title-white mobile-text">
-                                        <li>
-                                            Character Design
-                                        </li>
-                                        <li>
-                                            Character Animation
-                                        </li>
-                                        <li>
-                                            2D Illustrations
-                                        </li>
-                                        <li>
-                                            Background Art
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="row">
-                                    <div style="text-align:right; width: max-content; flex-grow:10; font-family:'Courier New'" class="column read-more">
-                                        <h5 style="text-align: right; padding-top: 3px;" class="text-white">
-                                            READ MORE
-                                        </h5>
-                                    </div>
-                                    <div class="column">
-                                        <img src="../../assets/Portfolio/Icons/next.png"  class="card-arrow" />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+    <!-- Ray Photo Section -->
+    <div class="d-flex spooky-bg">
+        <div class="regular pic-gallery-row">
+            <div class="pic-gallery-column">
+                <!-- Whisker Witchery -->
+                <div class="pic-card">
+                    <div class="pic-card-bg">
+                        <img src="assets/About/RayPhotos/RayPic2.jpg">
                     </div>
                 </div>
             </div>
-        </body>
+            <div class="pic-gallery-column">
+                <!-- Whisker Witchery -->
+                <div class="pic-card">
+                    <div class="pic-card-bg pic-top">
+                        <img src="assets/About/RayPhotos/RayPic4.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="pic-gallery-column">
+                <!-- Whisker Witchery -->
+                <div class="pic-card">
+                    <div class="pic-card-bg">
+                        <img src="assets/About/RayPhotos/RayPic4.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="pic-gallery-column">
+                <!-- Whisker Witchery -->
+                <div class="pic-card">
+                    <div class="pic-card-bg pic-bottom">
+                        <img src="assets/About/RayPhotos/RayPic4.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="pic-gallery-column">
+                <!-- Whisker Witchery -->
+                <div class="pic-card">
+                    <div class="pic-card-bg pic-bottom">
+                        <img src="assets/About/RayPhotos/RayPic4.jpg">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="pic-gallery-column">
+                <!-- Whisker Witchery -->
+                <div class="pic-card">
+                    <div class="pic-card-bg pic-bottom">
+                        <img src="assets/About/RayPhotos/RayPic4.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="pic-gallery-column">
+                <!-- Whisker Witchery -->
+                <div class="pic-card">
+                    <div class="pic-card-bg pic-bottom">
+                        <img src="assets/About/RayPhotos/RayPic4.jpg">
+                    </div>
+                </div>
+            </div>
+            <div class="pic-gallery-column">
+                <!-- Whisker Witchery -->
+                <div class="pic-card">
+                    <div class="pic-card-bg pic-bottom">
+                        <img src="assets/About/RayPhotos/RayPic4.jpg">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+
+
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
