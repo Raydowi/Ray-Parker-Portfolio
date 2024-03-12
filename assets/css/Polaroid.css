@@ -2,6 +2,9 @@
    Polaroids (CSS Snippet) by sardiine on toyhou.se
 ---------------------------*/
 
+.mobile-scroll, .mobile-photos-scroll {
+  display:none;
+}
 
 /*--- CENTER GALLERY ---*/
 .user-characters-gallery.characters-gallery .gallery-row {
@@ -58,9 +61,10 @@
 }
 
 .scroll-picture{
+  margin: 60px 0px;
   padding: 30px;
   flex: 33%;
-  max-width: 25%;
+  max-width: 280px;
   position: relative;
 }
 
@@ -97,6 +101,26 @@
   width: 80%;
 }
 
+.polaroid-column {
+  flex: 33%;
+  max-width: 33%;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.polaroid-text-column {
+  flex: 66%;
+  max-width: 66%;
+  padding: 0 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
 /*--- DISAPPEAR CHARACTER USERNAME AND STATS ---*/
 .thumb-caption .btn {
   background-color: transparent !important; 
@@ -121,10 +145,46 @@
 
 /* Responsive layout - once the screen size is under 1100 pixels, don't do the sideways scroll anymore! Do flexboxes w/ textboxes */
 @media screen and (max-width: 1100px) {
-  
+  .mobile-scroll{
+    display:block;
+  }  
+
+  .desktop-scroll{
+    display:none;
+  }
+
+  .polaroid-column, .polaroid-text-column {
+    flex: 50%;
+    max-width: 50%;
+  }
+
+  .scroll-picture{
+    min-width: 240px;
+    margin: 20px 0px;
+  }
 }
 
 /* Responsive layout - mobile-friendly version */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 750px) {
+  .polaroid-column {
+    padding: 30px 0px;
+  }
+
+  .polaroid-column, .polaroid-text-column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .About {
+    margin: 0px;
+  }
+
+  .desktop-photos-scroll{
+    display:none;
+  }
+
+  .mobile-photos-scroll{
+    display:block;
+  }
 
 }
