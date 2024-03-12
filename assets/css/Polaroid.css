@@ -1,45 +1,6 @@
 /*---------------------------
    Polaroids (CSS Snippet) by sardiine on toyhou.se
 ---------------------------*/
- 
-h1 {
-  color: #4fa04f;
-}
-h1 + a {
-  color: #a04f4f;
-}
-h1:hover + a {
-  color: #4f4fd0;
-}
-a:hover + h1 {
-  background-color: #444;
-}
-
-.test1 {
-  color: #4fa04f;
-}
-
-.test1 + .test2{
-  color: #a04f4f;
-}
-
-.test1:hover + .test2{
-  color: #4f4fd0;
-}
-
-
-
-.test1 {
-  color: #4fa04f;
-}
-
-.test1 + .test2{
-  color: #a04f4f;
-}
-
-.test1:hover + .test2{
-  color: #4f4fd0;
-}
 
 
 /*--- CENTER GALLERY ---*/
@@ -96,26 +57,44 @@ a:hover + h1 {
 
 }
 
-.black-paper{
-  text-align: center;
-  text-indent: 0px;
-  background-color: black;
-  height: 300px;
-  width: 300px;
+.scroll-picture{
+  padding: 30px;
+  flex: 33%;
+  max-width: 25%;
+  position: relative;
+  z-index: 3;
+}
+
+.scroll-paper {
+  background-color: #FFF5EB;
+  height: 280px;
+  width: 30%;
   transition: 1s;
+  position: absolute;
+  overflow: hidden;
+}
+
+.scroll-text{
+  transition: 1s;
+  filter: opacity(40%);
+  padding: 30px 0px 30px 180px;
+}
+
+.scroll-paper:hover .scroll-text, .scroll-paper:has(+ .gallery-thumb.character-thumb.gallery-item:hover) .scroll-text {
+  filter: opacity(100%);
+  margin: 30px;
+  padding: 30px 0px 30px 280px;
 }
   
 /*--- CHARACTER THUMBNAIL HOVER ---*/
-.gallery-thumb.character-thumb.gallery-item:hover {
+.gallery-thumb.character-thumb.gallery-item:hover, .scroll-paper:hover + .gallery-thumb.character-thumb.gallery-item {
     transform: rotate(2deg);
     transform-origin: top left;
 }
 
-
-.gallery-thumb.character-thumb.gallery-item:hover + .black-paper {
-  width: 600px;
+.scroll-paper:hover, .scroll-paper:has(+ .gallery-thumb.character-thumb.gallery-item:hover) {
+  width: 80%;
 }
-
 
 /*--- DISAPPEAR CHARACTER USERNAME AND STATS ---*/
 .thumb-caption .btn {
