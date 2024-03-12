@@ -10,7 +10,6 @@
     flex-direction: column;
     align-items: center;
     flex: 1;
-    padding: 10px;
 }
 
 .pic-card {
@@ -21,6 +20,7 @@
     border-radius: 30px;
     overflow: hidden;
     transition: 0.3s;
+    box-shadow: 0 8px 16px 0 rgba(39, 17, 10, 0.6);
 }
 
 .pic-card:hover {
@@ -39,7 +39,7 @@
 }
 
 .pic-short {
-    scale: 200%;
+    scale: 140%;
 }
 
 .pic-top {
@@ -73,6 +73,7 @@
     .pic-gallery-column {
         flex: 100%;
         max-width: 100%;
+        padding: 10px 0px;
     }
 
     .pic-card {

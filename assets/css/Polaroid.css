@@ -2,6 +2,46 @@
    Polaroids (CSS Snippet) by sardiine on toyhou.se
 ---------------------------*/
  
+h1 {
+  color: #4fa04f;
+}
+h1 + a {
+  color: #a04f4f;
+}
+h1:hover + a {
+  color: #4f4fd0;
+}
+a:hover + h1 {
+  background-color: #444;
+}
+
+.test1 {
+  color: #4fa04f;
+}
+
+.test1 + .test2{
+  color: #a04f4f;
+}
+
+.test1:hover + .test2{
+  color: #4f4fd0;
+}
+
+
+
+.test1 {
+  color: #4fa04f;
+}
+
+.test1 + .test2{
+  color: #a04f4f;
+}
+
+.test1:hover + .test2{
+  color: #4f4fd0;
+}
+
+
 /*--- CENTER GALLERY ---*/
 .user-characters-gallery.characters-gallery .gallery-row {
     justify-content: center;
@@ -55,11 +95,25 @@
   max-height: 300px;
 
 }
+
+.black-paper{
+  text-align: center;
+  text-indent: 0px;
+  background-color: black;
+  height: 300px;
+  width: 300px;
+  transition: 1s;
+}
   
 /*--- CHARACTER THUMBNAIL HOVER ---*/
 .gallery-thumb.character-thumb.gallery-item:hover {
     transform: rotate(2deg);
     transform-origin: top left;
+}
+
+
+.gallery-thumb.character-thumb.gallery-item:hover + .black-paper {
+  width: 600px;
 }
 
 

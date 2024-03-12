@@ -150,6 +150,10 @@ body {
     transform: translate(-50%,-50%);
 }
 
+.About{
+    margin: 10px 80px;
+}
+
 .regular {
     margin: 10px 80px;
 }
