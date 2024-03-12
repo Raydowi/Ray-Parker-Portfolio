@@ -62,7 +62,6 @@
   flex: 33%;
   max-width: 25%;
   position: relative;
-  z-index: 3;
 }
 
 .scroll-paper {
@@ -84,6 +83,7 @@
   filter: opacity(100%);
   margin: 30px;
   padding: 0px 0px 0px 280px;
+  
 }
   
 /*--- CHARACTER THUMBNAIL HOVER ---*/
@@ -93,6 +93,7 @@
 }
 
 .scroll-paper:hover, .scroll-paper:has(+ .gallery-thumb.character-thumb.gallery-item:hover) {
+  height: auto;
   width: 80%;
 }
 
@@ -117,13 +118,13 @@
   opacity: .4;
 }
 .thumb-character-edit:hover {opacity: 1;}
- 
-/*--- CREDIT (this is optional, i just left it here so others could find the og code) ---*/
-#content:after {
-  content: 'polaroid css by sardiine';
-  font-size: 10px;
-  opacity: .6;
-  right: 15px;
-  bottom: 10px;
-  position: absolute;
+
+/* Responsive layout - once the screen size is under 1100 pixels, don't do the sideways scroll anymore! Do flexboxes w/ textboxes */
+@media screen and (max-width: 1100px) {
+  
+}
+
+/* Responsive layout - mobile-friendly version */
+@media screen and (max-width: 600px) {
+
 }
