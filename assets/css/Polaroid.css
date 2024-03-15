@@ -98,7 +98,7 @@
 
 .scroll-paper:hover, .scroll-paper:has(+ .gallery-thumb.character-thumb.gallery-item:hover) {
   height: auto;
-  width: 80%;
+  width: 70%;
 }
 
 .polaroid-column {
