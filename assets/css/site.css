@@ -741,3 +741,8 @@ hr {
     padding: 20px;
     border: 12px double #FFF5EB;
 }
+
+.compact-section-width{
+    max-width: 1400px;
+    margin: 0 auto;
+}
