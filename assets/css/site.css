@@ -646,10 +646,6 @@ hr {
         width: 0px !important;
     }
 
-    .game-project p {
-        padding: 10px 20px;
-    }
-
     .video-height {
         height: 250px;
     }
@@ -691,6 +687,10 @@ hr {
 
     .center-section {
         display: flex;
+    }
+
+    .portfolio-desc{
+        margin: 20px;
     }
 }
 
