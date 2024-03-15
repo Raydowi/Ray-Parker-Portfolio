@@ -122,6 +122,12 @@ body {
     }
 }
 
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+    
+}
+
+
 /* ---- Index Page ----*/
 
 .center-parent-img {
