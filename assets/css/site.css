@@ -696,7 +696,19 @@ hr {
     .portfolio-desc{
         margin: 20px;
     }
+
+    /* Following 2 CSS files is for the mobile icons on the index page */
+
+    .About.icons{
+        max-width:50%;
+    }
+
+    .icons img{
+        padding: 0px;
+        margin: 20px;
+    }
 }
+
 
 .game-project p {
     font-size: 18px;
@@ -720,7 +732,7 @@ hr {
 .nav-pills li {
     display:inline-block;
     border-right:1px solid;
-    padding: 4px;
+    padding: 5px 15px;
     color: #FFF5EB;
 }
 .nav-pills li:last-child {
@@ -749,4 +761,33 @@ hr {
 .compact-section-width{
     max-width: 1400px;
     margin: 0 auto;
+}
+
+.navbar-collapse{
+    align-items: initial;
+}
+
+.dropdown:hover .dropdown-menu {
+        display: block;
+        margin-top: 0; /* remove the gap so it doesn't close */
+}
+
+.navbar{
+    --bs-navbar-active-color: initial;
+}
+
+.nav-pills{
+    --bs-nav-pills-link-active-bg: #592B15;
+}
+
+.dropdown-menu {
+    --bs-dropdown-color: initial;
+    --bs-dropdown-link-hover-color: initial;
+    --bs-dropdown-link-hover-bg: #592B15;
+    --bs-dropdown-link-active-bg: #401911;
+    --bs-dropdown-link-active-color: #FFF5EB;
+}
+.nav-pills .show >.nav-link {
+    background-color: initial;
+
 }

@@ -8,6 +8,16 @@
     <meta name="author" content="Ray Parker">
 
     <title>Ray Parker - Home</title>
+    <meta content="Portfolio | Ray Parker" property="og:title" />
+    <meta content="Ray Parker is a software engineer and 2D illustrator. This portfolio showcases her passion for creating video games, websites, and other interactive programs." property="og:description" />
+    <meta content="https://embed.com/this-is-the-site-url" property="og:url" />
+    <meta content="https://www.raydowi.com/assets/About/Icon-Test.png" property="og:image" />
+    <meta content="#7E5439" data-react-helmet="true" name="theme-color" />
+
+    <!-- Necessary scripts for navbar mobile functionality -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>    
 
     <link rel="stylesheet" href="lib/bootstrap/dist/css/bootstrap.min.css" />
 
@@ -33,29 +43,47 @@
 </head>
 
 <body>
-    <header class="navbar navbar-expand-sm med-brown-bg justify-content-center">
-        <ul class="nav nav-pills">
-            <li class="nav-item">
-                <a class="nav-link cream-text header-color" href="">Home</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link cream-text header-color" href="Views/Home/About.html">About</a>
-            </li>
-            <li>
-                <a class="nav-link cream-text header-color" href="Views/Portfolio/Games.html">Games</a>
-            </li>
-            <li>
-                <a class="nav-link cream-text header-color" href="Views/Portfolio/Software.html">Software</a>
-            </li>
-            <li>
-                <a class="nav-link cream-text header-color" href="Views/Portfolio/Artwork.html">Artwork</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link cream-text header-color" href="Views/Home/contact.html">Contact</a>
-            </li>
-        </ul>
+    <header class="navbar navbar-expand-sm med-brown-bg sticky-top" style="padding: 5px 10px;">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="nav-pills navbar-collapse collapse w-100" id="mainNav">
+            <ul class="navbar-nav w-100 justify-content-center" id="navElements">
+                <li class="nav-item">
+                    <a class="nav-link cream-text header-color" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cream-text header-color" href="Views/Home/About.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle cream-text header-color" href="Views/Portfolio/Games.html">
+                      Games
+                    </a>
+                    <div class="dropdown-menu med-brown-bg" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item cream-text header-color" href="Views/Portfolio/Projects/WhiskerWitchery.html">Whisker Witchery</a>
+                      <a class="dropdown-item cream-text header-color" href="Views/Portfolio/Projects/LeafItBehind.html">Leaf It Behind</a>
+                      <a class="dropdown-item cream-text header-color" href="Views/Portfolio/Projects/HiveQuest.html">HiveQuest</a>
+                      <a class="dropdown-item cream-text header-color" href="Views/Portfolio/Projects/SeniorHearts.html">Senior Hearts</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle cream-text header-color" href="Views/Portfolio/Software.html">
+                      Software
+                    </a>
+                    <div class="dropdown-menu med-brown-bg" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item cream-text header-color" href="Views/Portfolio/Projects/HTTPProxy.html">HTTP Proxy</a>
+                      <a class="dropdown-item cream-text header-color" href="Views/Portfolio/Projects/RayTracing.html">Ray Tracing</a>
+                    </div>
+                </li>
+                <li>
+                    <a class="nav-link cream-text header-color" href="Views/Portfolio/Artwork.html">Artwork</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link cream-text header-color" href="Views/Home/contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
     </header>
-
 
     <div class="About compact-section-width">
         <div class="user-characters-gallery characters-gallery">
@@ -82,7 +110,17 @@
                             <h4 style="text-align:center; color: #592B15"> I am a <b>software engineer</b> and a <b>2D illustrator</b>.</h4>
                             <hr style="padding: 0px;"/>
                             <h4 style="padding: 0px;text-indent: 20px !important;">  </h4>
-                            <h4 style="padding: 0px;text-indent: 20px !important;"> I have always been an artistic person with a love for technology, hence my love for video games, websites, and other interactive programs. I thrive when collaborating with brilliant minds and strive to create multidisciplinary masterpieces. Thank you for visiting my portfolio! </h4>                            
+                            <h4 style="padding: 0px;text-indent: 20px !important;"> I have always been an artistic person with a love for technology, hence my love for video games, websites, and other interactive programs. I thrive when collaborating with brilliant minds and strive to create multidisciplinary masterpieces. Thank you for visiting my portfolio! </h4>
+                            <div class="mobile-scroll">
+                                <div class="gallery-row center-section narrow-gallery">
+                                    <div class="About icons">
+                                        <img src="assets/Portfolio/Icons/LinkedIn.png" />
+                                    </div>
+                                    <div class="About icons">
+                                        <img src="assets/Portfolio/Icons/Mail.png" />
+                                    </div>
+                                </div>
+                            </div>                        
                             <br />
                         </div>
                     </div>
