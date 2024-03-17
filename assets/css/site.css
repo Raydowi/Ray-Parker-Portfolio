@@ -482,10 +482,7 @@ hr {
     max-width: 66%;
 }
 
-
-
-
-.regular .gallery-column img:hover {
+.regular .gallery-column img:hover, .About-icons:hover {
     color: #FFF5EB;
     opacity: 80%;
     transition: 0.5s;
@@ -699,13 +696,8 @@ hr {
 
     /* Following 2 CSS files is for the mobile icons on the index page */
 
-    .About.icons{
+    .About-icons {
         max-width:50%;
-    }
-
-    .icons img{
-        padding: 0px;
-        margin: 20px;
     }
 }
 
