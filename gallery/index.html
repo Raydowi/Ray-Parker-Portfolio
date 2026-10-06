@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Rammetto+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/shared/styles.css">
+  <title>Raydowi | Gallery</title>
+</head>
+<body>
+    <header>
+    <nav style="padding-right: var(--margin)">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/gallery/">Gallery</a>
+        <a href="mailto:rapark25@gmail.com"><img src="/shared/icon/mail.svg"></a>
+        <a href="https://www.linkedin.com/in/ray-i-parker/" target="_blank" rel="noopener noreferrer"><img src="/shared/icon/linkedin.svg" height="24px"></a>
+    </nav>
+</header>
+    <main>
+        
+<section class="hero">
+    <h1>Gallery</h1>
+    <div class="media"> <img src="img/RaydowiBanner.png" alt="Syke - Steam Cover Art"> </div>
+    <nav>
+        <a href="#character">Character Illustrations</a>
+        <a href="#games">Games Illustrations</a>
+        <a href="#shop">Shop & Merch</a>
+    </nav>
+</section>
+
+<section id="games">
+    <h2>Games Illustrations</h2>
+    <nav>
+        <a href="/leaf-it-behind/index.html#character-design">Leaf It Behind</a>
+        <a href="/whisker-witchery/index.html#promotional">Whisker Witchery</a>
+    </nav>
+ 
+    <div class="grid">
+        <div class="media ar1x1 modal"> <img src="img/Games_Syke.png" alt="Syke - Steam Cover Art"> </div>
+        <div class="media ar1x1 modal"> <img src="img/Games_FishTricks.png" alt="Fish Tricks - Game Cover Art"> </div>
+        <div class="media ar4x3 modal"> <img src="img/Games_WhiskerWitchery.png" alt="Fish Tricks - Game Cover Art"> </div>
+        <div class="media ar4x3 modal"> <img src="img/Games_EverythingMart.png" alt="Everything Mart - Steam Banner Art"> </div>
+    </div>
+    
+</section>
+
+<section id="character">
+    <h2>Character Illustrations</h2>
+    <div class="grid">
+        <div class="media ar16x9 modal"> <img src="img/Character_Banshee.png" alt="Character Illustration: Art for a foxlike character named Banshee"> </div>
+        <div class="media ar16x9 modal"> <img src="img/Character_RedFox.png" alt="Character Illustration: Experimental painting of a red fox character"> </div>
+        <div class="media ar16x9 modal"> <img src="img/Character_EasyDeliveryCo.png" alt="Character Illustration: Fanart for an indie game called Easy Delivery Co"> </div>
+        <div class="media ar16x9 modal"> <img src="img/Character_MinecraftWolf.png" alt="Character Illustration: Experimental painting of a Minecraft wolf"> </div>
+        <div class="media ar1x1 modal"> <img src="img/Character_Sisters.webp" alt="Character Illustration: Commission"> </div>
+        <div class="media ar1x1 modal"> <img src="img/Character_BestFriends.png" alt="Character Illustration: Commission"> </div>
+    </div>
+</section>
+
+<section id="shop">
+    <h2>Shop & Merch</h2>
+    <div class="grid" style="--cols: 3; --collapse-to: 1;">
+        <div class="media ar1x1 modal"> <img src="img/Merch_BirdStickerSheet.jpg" alt="bird"> </div>
+        <div class="media ar1x1 modal"> <img src="img/Merch_PokedogStickerSheet.jpg" alt="dog"> </div>
+        <div class="media ar1x1 modal"> <img src="img/Merch_WormSticker.jpg" alt="Wiley Worm matte sticker"> </div>
+    </div>
+
+</section>
+    </main>
+    <footer>
+    <img src="/shared/icon/logo.webp" width=100 style="padding-left: var(--margin)">
+    <div class="footer-content">
+        <div>
+            <a href="mailto:rapark25@gmail.com"><img src="/shared/icon/mail.svg" height="24px"></a>
+            <a href="https://www.linkedin.com/in/ray-i-parker/" target="_blank" rel="noopener noreferrer"><img src="/shared/icon/linkedin.svg" height="24px"></a>
+            <p>©Ray Parker 2026</p>
+        </div>
+        <a href="https://alleydot.com/" style="font-style: italic; color: dimgray; font-size: var(--s-small-height)">Design by Alleydot</a>
+    </div>
+</footer>
+</body>
+
+<button onclick="topFunction()" id="top-button" title="Go to top">Top</button>
+
+<div id="modal"  onclick="closeModal()">
+    <span id="close" onclick="closeModal()">&times;</span>
+    <img alt="" id="modal-content">
+    <div id="modal-video-wrapper">
+        <iframe id="modal-video" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div id="caption"></div>
+</div>
+<script src="/shared/scripts.js"></script>
+</html>

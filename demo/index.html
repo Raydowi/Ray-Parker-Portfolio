@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Rammetto+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/shared/styles.css">
+  <title>Raydowi | Demo</title>
+</head>
+<body>
+    <header>
+    <nav style="padding-right: var(--margin)">
+        <a href="/">Home</a>
+        <a href="/about/">About</a>
+        <a href="/gallery/">Gallery</a>
+        <a href="mailto:rapark25@gmail.com"><img src="/shared/icon/mail.svg"></a>
+        <a href="https://www.linkedin.com/in/ray-i-parker/" target="_blank" rel="noopener noreferrer"><img src="/shared/icon/linkedin.svg" height="24px"></a>
+    </nav>
+</header>
+    <main>
+        
+<!-- Above is the 11ty Front Matter! Include this on every new page, and change the title to be correct.-->
+
+
+<section class="hero">
+
+    <h1>Demo Page &lt;h1&gt;</h1>
+
+    <nav>
+        <a href="#layout">Layout</a>
+        <a href="#cards">Cards</a> 
+        <a href="#media">Media</a> 
+        <a href="#grids">Grids</a>
+    </nav>
+
+</section>
+
+<section id="layout">
+    <h2>Layout - this is a section header &lt;h2&gt;</h2>
+    <div class="media ar16x9 modal"> <img src="img/example.png" alt="Modal image example"> </div>
+    <span class ="footnote">
+        This is a footnote. &lt;span class="footnote"&gt;
+    </span>
+    <h4>
+        This is a header within a section. &lt;h4&gt;
+    </h4>
+    <p>
+        This is a paragraph. &lt;p&gt;
+        <b>This text is bold. &lt;b&gt;</b>
+        <a href="#layout">This is a link. &lt;a&gt;</a> 
+    </p>
+    <p>
+        This is another paragraph.
+        Pages are split up into sections. 
+        Each section has an ID which is linked to by the nav at the top of the page.
+        Nav only contains links.
+        Each page should have its own "img/" folder.
+    </p>
+<pre><code>This is a code snippet, wrapped with &lt;pre&gt;&lt;code&gt;...&lt;/code&gt;&lt;/pre&gt;
+    it preserves newlines and whitespaces, like tabs!
+it can look a little odd in your HTML...</code></pre>
+    <span class ="footnote">
+        This is another footnote.
+        <b>This text is bold.</b>
+        <a href="#layout">This is a link.</a> 
+    </span>
+</section>
+
+<section id="cards">
+    <h2>Cards</h2>
+    <div class="card row">
+        <div class="card-media ar1x1"><img src="img/example.png" alt="Example splash art"></div>
+        <div class="card-body">
+            <h3>Card, Row</h3>
+            <p>
+                Cards are made from three divs:
+            </p>
+            <ul>
+                <li>card-media</li>
+                <li>card-body</li>
+                <li>card-footer</li>
+            </ul>
+            <p>
+                The parent div for this card has the "card" class and the "row" class.
+                The "row" class ensures it renders left-to-right on wider screens.
+            </p>
+            <p>
+                All text is inside of card-body.
+                Icons and CTA button are inside card-footer.
+                Icons should ALWAYS PRECEED cta buttons.
+            </p>
+            <p>
+                Card titles should use h3.
+            </p>
+        </div>
+        <div class ="card-footer">
+            <div class="icons">
+                <div class="icon-with-text"><img src="/shared/icon/asterisk.svg" alt="This asterisk has:"><span>Text</span></div>
+                <img src="/shared/icon/asterisk.svg" alt="Has an asterisk">
+                <img src="/shared/icon/asterisk.svg" alt="Has an asterisk">
+            </div>
+            <a class="cta-link" href="/">Home</a>
+        </div>
+    </div>
+
+<pre><code>&lt;div class="card row"&gt;
+
+    &lt;div class="card-media ar1x1&gt; 
+        &lt;img src="img/..."&gt;
+    &lt;/div&gt;
+
+    &lt;div class="card-body&gt;
+        &lt;h3&gt; Title &lt;/h3&gt;
+        ...Body text here... 
+    &lt;/div&gt;
+
+    &lt;div class="card-footer"&gt;
+        &lt;div class="icons"&gt;
+            &lt;div class="icon-with-text"&gt; 
+                &lt;img src="/shared/icon/..."&gt; 
+                &lt;span&gt;TEXT&lt;span&gt; 
+            &lt;/div&gt;
+            &lt;img src="/shared/icon/..."&gt;
+            &lt;img src="/shared/icon/..."&gt;
+        &lt;/div&gt;
+        &lt;a class="cta-link" href="/...&gt;TEXT&lt;/a&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt;</code></pre>
+
+    <div class="grid">
+        <div class="card">
+            <div class="card-media ar16x9"><img src="img/example.png" alt="'Example splash art"></div>
+            <div class="card-body">
+                <h3>Icons</h3>
+                <p>
+                    Icons must be contained in the "icons" div, and should be raw images.
+                    Note the backslash for the img src - this is a relative from root path to the shared icon folder.
+                </p>
+                <p>
+                    A div with the class "icon-with-text" can be used as a sibling for the icon images.
+                    Text on these divs should be inside of a span element.
+                </p>
+            </div>
+            <div class ="card-footer">
+                <div class="icons">
+                    <div class="icon-with-text"><img src="/shared/icon/asterisk.svg" alt="This asterisk has:"><span>Text</span></div>
+                    <img src="/shared/icon/asterisk.svg" alt="Has an asterisk">
+                    <img src="/shared/icon/asterisk.svg" alt="Has an asterisk">
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-media ar4x3"><img src="img/example.png" alt="Example splash art"></div>
+            <div class="card-body">
+                <p>
+                    The parent div for this card, and the "icons" card, have only the "card" class.
+                    Both are contained within a "grid" div which will collapse to one column on small screens.
+                </p>
+            </div>
+            <div class ="card-footer">
+                <a class="cta-link" href="/">Home</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="media">
+    <h2>Media</h2>
+    <div class="media ar16x9 modal"><img src="img/example.png" alt="Modal image example"></div>
+
+<pre><code>&lt;div class="media ar16x9 modal"&gt; 
+    &lt;img src="img/example.png" alt="Modal image example"&gt; 
+&lt;/div&gt; </code></pre>
+
+    <p>
+        Both "card-media" and "media" classes use the same helper classes for their aspect ratio, and can contain either an img or iframe. 
+        These aspect ratios should almost always be used to ensure proper formatting across devices:
+    </p>
+    <ul>
+        <li>.ar1x1</li>
+        <li>.ar4x3</li>
+        <li>.ar16x9</li>
+    </ul>
+    <p>
+        The "media" class has a couple of unique helpers:
+    </p>
+    <ul>
+        <li>.contain</li>
+        <li>.modal</li>
+    </ul>
+    <p>
+        ".modal" makes an image clickable for a "lightbox" view, and ".contain" will change the inner image from a "fill" to a "contain."
+        This is good for things like clear PNG's
+    </p>
+<div class="grid">
+    <div>
+        <p>
+            If you want a video to open as a modal, simply wrap the inner image with an anchor to a youtube video:
+        </p>
+        <div class="media ar4x3 modal"> <a href="https://youtu.be/oHg5SJYRHA0"> <img src="img/example.png" alt="Modal video example"> </a> </div>
+
+<pre><code>&lt;div class="media ar4x3 modal"&gt;
+    &lt;a href="https://youtu.be/oHg5SJYRHA0"&gt;
+        &lt;img src="img/example.png" alt="Modal video example"&gt;
+    &lt;/a&gt;
+&lt;/div&gt; </code></pre>
+
+    </div>
+    <div>
+        <p>
+            If you'd rather the video play <b>within</b> the media div and not open as a modal, simply drop the iframe inside the media class:
+        </p>
+        <div class="media ar4x3">
+            <iframe src="https://www.youtube.com/embed/oHg5SJYRHA0?si=neWpcgDi-oQM7nj5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+
+<pre><code>&lt;div class="media ar4x3"&gt;
+    &lt;iframe src="https://www.youtube.com/embed/oHg5SJYRHA0?si=neWpcgDi-oQM7nj5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt; </code></pre>
+
+    </div>
+</div>
+
+
+
+
+</section>
+
+<section id="grids">
+    <h2>Grids</h2>
+    <p>
+        Time for the <b>Big stuff!</b>
+        Actually just kidding, these grids are super easy.
+        Just make a div with the "grid" class and then make divs for each child.
+        These child divs can contain anything a normal div would!
+        There's a few style modifiers to keep in mind:
+    </p>
+    <ul>
+        <li>--cols: x;</li>
+        <li>--collapse-to: x;</li>
+        <li>grid-column: span x;</li>
+    </ul>
+    <p>
+        By default, grids are two columns wide and collapse to a single column on smaller screens:
+    </p>
+    <div class="grid">
+        <div class="media ar1x1">
+            <img src="img/example.png" alt="example">
+        </div>
+        <div class="media ar1x1">
+            <img src="img/example.png" alt="example">
+        </div>
+    </div>
+
+<pre><code>&lt;div class="grid"&gt;
+
+    &lt;div class="media ar1x1"&gt;
+        &lt;img src="img/example.png"&gt;
+    &lt;/div&gt;
+
+    &lt;div class="media ar1x1"&gt;
+        &lt;img src="img/example.png"&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt; </code></pre>
+
+    <p>
+        This behaviour can be modified by style attributes:
+    </p>
+    <div class="grid" style="--cols: 3; --collapse-to: 3;">
+        <div class="media ar1x1">
+            <img src="img/example.png" alt="example">
+        </div>
+        <div class="media ar1x1">
+            <img src="img/example.png" alt="example">
+        </div>
+        <div class="media ar1x1">
+            <img src="img/example.png" alt="example">
+        </div>
+    </div>
+
+<pre><code>&lt;div class="grid" style="--cols: 3; --collapse-to: 3;"&gt;
+
+    &lt;div class="media ar1x1"&gt;
+        &lt;img src="img/example.png"&gt;
+    &lt;/div&gt;
+
+    &lt;div class="media ar1x1"&gt;
+        &lt;img src="img/example.png"&gt;
+    &lt;/div&gt;
+
+    &lt;div class="media ar1x1"&gt;
+        &lt;img src="img/example.png"&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt; </code></pre>
+    <p>
+        "--collapse-to" should always be lower than or equal to "--cols".
+    </p>
+    <p>
+        If you want a grid item to span across multiple columns, simply add an inline style to that element:
+    </p>
+
+    <div class="grid" style="--cols: 3; --collapse-to: 3;">
+        <div class="media ar16x9" style="grid-column: span 2;">
+            <img src="img/example.png" alt="example">
+        </div>
+        <div class="media ar1x1">
+            <img src="img/example.png" alt="example">
+        </div>
+    </div>
+
+<pre><code>&lt;div class="grid" style="--cols: 3; --collapse-to: 3;"&gt;
+
+    &lt;div class="media ar16x9" style="grid-column: span 2;"&gt;
+        &lt;img src="img/example.png"&gt;
+    &lt;/div&gt;
+
+    &lt;div class="media ar1x1"&gt;
+        &lt;img src="img/example.png"&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt; </code></pre>
+
+    <p>
+        That still doesn't look quite right, though! If you want these elements to automatically
+        resize to fit on one line, just remove the aspect ratio helper from the element that can change more easily.
+    </p>
+
+    <div class="grid" style="--cols: 3; --collapse-to: 3;">
+        <div class="media ar16x9" style="grid-column: span 2;">
+            <img src="img/example.png" alt="example">
+        </div>
+        <div class="media">
+            <img src="img/example.png" alt="example">
+        </div>
+    </div>
+
+<pre><code>&lt;div class="grid" style="--cols: 3; --collapse-to: 3;"&gt;
+
+    &lt;div class="media ar16x9" style="grid-column: span 2;"&gt;
+        &lt;img src="img/example.png"&gt;
+    &lt;/div&gt;
+
+    &lt;div class="media"&gt;
+        &lt;img src="img/example.png"&gt;
+    &lt;/div&gt;
+
+&lt;/div&gt; </code></pre>
+
+</section>
+    </main>
+    <footer>
+    <img src="/shared/icon/logo.webp" width=100 style="padding-left: var(--margin)">
+    <div class="footer-content">
+        <div>
+            <a href="mailto:rapark25@gmail.com"><img src="/shared/icon/mail.svg" height="24px"></a>
+            <a href="https://www.linkedin.com/in/ray-i-parker/" target="_blank" rel="noopener noreferrer"><img src="/shared/icon/linkedin.svg" height="24px"></a>
+            <p>©Ray Parker 2026</p>
+        </div>
+        <a href="https://alleydot.com/" style="font-style: italic; color: dimgray; font-size: var(--s-small-height)">Design by Alleydot</a>
+    </div>
+</footer>
+</body>
+
+<button onclick="topFunction()" id="top-button" title="Go to top">Top</button>
+
+<div id="modal"  onclick="closeModal()">
+    <span id="close" onclick="closeModal()">&times;</span>
+    <img alt="" id="modal-content">
+    <div id="modal-video-wrapper">
+        <iframe id="modal-video" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div id="caption"></div>
+</div>
+<script src="/shared/scripts.js"></script>
+</html>

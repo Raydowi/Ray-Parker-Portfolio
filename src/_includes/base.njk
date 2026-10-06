@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&family=Rammetto+One&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/shared/styles.css">
+  <title>{{ title }}</title>
+</head>
+<body>
+    {% include "header.njk" %}
+    <main>
+        {{ content | safe }}
+    </main>
+    {% include "footer.njk" %}
+</body>
+
+<button onclick="topFunction()" id="top-button" title="Go to top">Top</button>
+
+<div id="modal"  onclick="closeModal()">
+    <span id="close" onclick="closeModal()">&times;</span>
+    <img alt="" id="modal-content">
+    <div id="modal-video-wrapper">
+        <iframe id="modal-video" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+    <div id="caption"></div>
+</div>
+<script src="/shared/scripts.js"></script>
+</html>
